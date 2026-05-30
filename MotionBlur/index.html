@@ -1,0 +1,1182 @@
+<!DOCTYPE html>
+<html lang="bs">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MotionVibe</title>
+  <meta name="description" content="MotionVibe — web stranice, e-commerce i web aplikacije iz Bosne i Hercegovine." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Orbitron:wght@400;500;600;700;800;900&family=Inter:wght@400;500;600;700;800;900&family=Syne:wght@700;800&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<!-- ── PAGE LOADER ───────────────────────────────────────────── -->
+<div id="page-loader" aria-hidden="true">
+  <div class="ld-inner">
+    <div class="ld-wordmark">MotionVibe<span>.ba</span></div>
+    <div class="ld-bar"><div class="ld-fill"></div></div>
+  </div>
+</div>
+
+<!-- ── TOP TICKER ────────────────────────────────────────────── -->
+<div class="top-ticker" aria-hidden="true">
+  <div class="tk-live"><span class="tk-live-dot"></span>DOSTUPNI</div>
+  <div class="ticker-track" id="tickerTrack">
+    <span class="tk-item">WEB DIZAJN<span class="tk-sep">—</span>E-COMMERCE<span class="tk-sep">—</span>SEO OPTIMIZACIJA<span class="tk-sep">—</span>MOTIONVIBE.BA<span class="tk-sep">—</span>LANDING STRANICE<span class="tk-sep">—</span>BOSNA I HERCEGOVINA<span class="tk-sep">—</span>BRANDING<span class="tk-sep">—</span>WEB APLIKACIJE<span class="tk-sep">—</span>DIGITALNI MARKETING<span class="tk-sep">—</span></span>
+    <span class="tk-item">WEB DIZAJN<span class="tk-sep">—</span>E-COMMERCE<span class="tk-sep">—</span>SEO OPTIMIZACIJA<span class="tk-sep">—</span>MOTIONVIBE.BA<span class="tk-sep">—</span>LANDING STRANICE<span class="tk-sep">—</span>BOSNA I HERCEGOVINA<span class="tk-sep">—</span>BRANDING<span class="tk-sep">—</span>WEB APLIKACIJE<span class="tk-sep">—</span>DIGITALNI MARKETING<span class="tk-sep">—</span></span>
+  </div>
+</div>
+
+<!-- ── NAV ──────────────────────────────────────────────────── -->
+<nav id="nav">
+  <div class="nav-container">
+
+    <a href="index.html" class="nav-logo">MotionVibe<span>.ba</span></a>
+
+    <div class="nav-mid">
+      <a href="index.html" class="nav-link active">Početna</a>
+
+      <!-- Usluge mega dropdown -->
+      <div class="nav-item" id="dropUsluge">
+        <button class="nav-link nav-drop-btn" aria-expanded="false">
+          Usluge
+          <svg class="chevron" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="mega-menu">
+          <div class="mega-inner">
+
+            <div class="mega-col">
+              <div class="mega-col-head">
+                <svg class="mega-ico" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="3" width="16" height="12" rx="2"/><path d="M6 19h8M10 15v4"/></svg>
+                Izrada Web Stranica
+              </div>
+              <a href="pages/usluga.html?id=wordpress-stranice" class="mega-link"><span>WordPress Stranice</span><small>Brza izrada u WordPress-u</small></a>
+              <a href="pages/usluga.html?id=custom-web-stranice" class="mega-link"><span>Custom Web Stranice</span><small>Next.js i custom development</small></a>
+              <a href="pages/usluga.html?id=landing-stranice" class="mega-link"><span>Landing Stranice</span><small>Visoko-konvertujuće stranice</small></a>
+              <a href="pages/usluga.html?id=redizajn" class="mega-link"><span>Redizajn Stranice</span><small>Modernizacija postojećih</small></a>
+              <a href="pages/usluga.html?id=visejezicne" class="mega-link"><span>Višejezične Stranice</span><small>Stranice na više jezika</small></a>
+            </div>
+
+            <div class="mega-col">
+              <div class="mega-col-head">
+                <svg class="mega-ico" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2 3h16v3H2zM2 9h6v8H2zM11 9h7v4h-7zM11 16h7"/></svg>
+                Izrada Web Shopova
+              </div>
+              <a href="pages/usluga.html?id=woocommerce" class="mega-link"><span>WooCommerce Shop</span><small>WordPress e-commerce</small></a>
+              <a href="pages/usluga.html?id=custom-ecommerce" class="mega-link"><span>Custom E-commerce</span><small>Headless commerce rješenja</small></a>
+            </div>
+
+            <div class="mega-col">
+              <div class="mega-col-head">
+                <svg class="mega-ico" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="14" height="14" rx="2"/><path d="M7 8h6M7 11h4"/></svg>
+                Web Aplikacije
+              </div>
+              <a href="pages/usluga.html?id=crm-sistemi" class="mega-link"><span>CRM Sistemi</span><small>Custom CRM rješenja</small></a>
+              <a href="pages/usluga.html?id=booking-sistemi" class="mega-link"><span>Booking Sistemi</span><small>Online rezervacijski sistemi</small></a>
+              <a href="pages/usluga.html?id=interni-portali" class="mega-link"><span>Interni Portali</span><small>Intranet i portali</small></a>
+              <a href="pages/usluga.html?id=wordpress-plugini" class="mega-link"><span>WordPress Plugini</span><small>Custom plugin development</small></a>
+            </div>
+
+            <div class="mega-col">
+              <div class="mega-col-head">
+                <svg class="mega-ico" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="8" cy="8" r="5"/><path d="M14 14l4 4"/></svg>
+                SEO Optimizacija
+              </div>
+              <a href="pages/usluga.html?id=seo-lokalni" class="mega-link"><span>Lokalni SEO</span><small>Google Maps i lokalna pretraga</small></a>
+              <a href="pages/usluga.html?id=seo-onpage" class="mega-link"><span>On-Page SEO</span><small>Optimizacija sadržaja</small></a>
+              <a href="pages/usluga.html?id=seo-tehnicki" class="mega-link"><span>Tehnički SEO</span><small>Core Web Vitals i tehnika</small></a>
+              <a href="pages/usluga.html?id=seo-audit" class="mega-link"><span>SEO Audit</span><small>Analiza i plan akcija</small></a>
+            </div>
+
+            <div class="mega-col">
+              <div class="mega-col-head">
+                <svg class="mega-ico" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2 2h16v4H2zM2 9h4v9H2zM9 9h9v5H9zM9 17h9"/></svg>
+                Digitalni Marketing
+              </div>
+              <a href="pages/usluga.html?id=google-ads" class="mega-link"><span>Google Ads</span><small>Search i Display kampanje</small></a>
+              <a href="pages/usluga.html?id=facebook-oglas" class="mega-link"><span>Facebook Oglašavanje</span><small>Facebook kampanje</small></a>
+              <a href="pages/usluga.html?id=instagram-oglas" class="mega-link"><span>Instagram Oglašavanje</span><small>Instagram kampanje</small></a>
+              <a href="pages/usluga.html?id=content-marketing" class="mega-link"><span>Content Marketing</span><small>Sadržaj koji konvertira</small></a>
+            </div>
+
+            <div class="mega-col">
+              <div class="mega-col-head">
+                <svg class="mega-ico" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M10 2l2 6h6l-5 4 2 6-5-4-5 4 2-6-5-4h6z"/></svg>
+                Održavanje i Podrška
+              </div>
+              <a href="pages/usluga.html?id=sigurnosno-odrzavanje" class="mega-link"><span>Sigurnosno Održavanje</span><small>Backup, update, sigurnost</small></a>
+              <a href="pages/usluga.html?id=speed-optimizacija" class="mega-link"><span>Speed Optimizacija</span><small>Core Web Vitals</small></a>
+            </div>
+
+          </div>
+          <div class="mega-footer">
+            <span>Niste sigurni šta vam treba? <a href="#kontakt">Javite nam se</a></span>
+            <a href="#usluge" class="mega-all">Sve usluge &rarr;</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Suradnje dropdown -->
+      <div class="nav-item" id="dropIndustrije">
+        <button class="nav-link nav-drop-btn" aria-expanded="false">
+          Suradnje
+          <svg class="chevron" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="mega-menu">
+          <div class="surdn-inner">
+            <div class="mega-col surdn-cols">
+              <div class="mega-col-head">
+                <svg class="mega-ico" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M10 18a8 8 0 100-16 8 8 0 000 16zm0-12v4l3 2"/></svg>
+                Industrije koje servisiramo
+              </div>
+              <a href="pages/industrija.html?id=ecommerce"            class="mega-link"><span>E-commerce</span><small>Online trgovine i retail</small></a>
+              <a href="pages/industrija.html?id=ugostiteljstvo"       class="mega-link"><span>Ugostiteljstvo</span><small>Restorani i hoteli</small></a>
+              <a href="pages/industrija.html?id=zdravstvo"            class="mega-link"><span>Zdravstvo</span><small>Klinike i wellness centri</small></a>
+              <a href="pages/industrija.html?id=profesionalne-usluge" class="mega-link"><span>Profesionalne Usluge</span><small>Advokati, agencije</small></a>
+            </div>
+            <div class="surdn-promo">
+              <div class="surdn-promo-tag">Besplatna konsultacija</div>
+              <p class="surdn-promo-text">Niste sigurni koji paket je pravi za vaš biznis? Razgovarajmo bez obaveza.</p>
+              <a href="#kontakt" class="btn-yellow">Razgovarajmo &rarr;</a>
+            </div>
+          </div>
+          <div class="mega-footer">
+            <span>Radimo s biznisima svih veličina, od lokalnih do međunarodnih</span>
+            <a href="#kontakt" class="mega-all">Kontaktirajte nas &rarr;</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- FAQ dropdown -->
+      <div class="nav-item" id="dropFaq">
+        <button class="nav-link nav-drop-btn" aria-expanded="false">
+          FAQ
+          <svg class="chevron" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="mega-menu">
+          <div class="faqd-inner">
+            <div class="mega-col">
+              <div class="mega-col-head">
+                <svg class="mega-ico" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M10 2a8 8 0 100 16A8 8 0 0010 2zm1 12H9v-2h2v2zm0-4H9V6h2v4z"/></svg>
+                Cijene & Rokovi
+              </div>
+              <a href="#pitanja" class="mega-link"><span>Koliko košta izrada?</span><small>Paketi od 450 KM</small></a>
+              <a href="#pitanja" class="mega-link"><span>Koliko traje izrada?</span><small>Prva verzija za 7 dana</small></a>
+              <a href="#pitanja" class="mega-link"><span>Hosting i domena uključeni?</span><small>Godišnji hosting + SSL</small></a>
+            </div>
+            <div class="mega-col">
+              <div class="mega-col-head">
+                <svg class="mega-ico" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="14" height="14" rx="2"/><path d="M7 8h6M7 11h4"/></svg>
+                Upravljanje & Tehnika
+              </div>
+              <a href="#pitanja" class="mega-link"><span>Mogu li sam uređivati sajt?</span><small>Lak CMS, bez tehničkog znanja</small></a>
+              <a href="#pitanja" class="mega-link"><span>Šta ako nisam zadovoljan?</span><small>Neograničene revizije</small></a>
+            </div>
+            <div class="mega-col">
+              <div class="mega-col-head">
+                <svg class="mega-ico" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="10" cy="10" r="8"/><path d="M2 10h16M10 2a14 14 0 000 16"/></svg>
+                Saradnja & Regija
+              </div>
+              <a href="#pitanja" class="mega-link"><span>Radite van BiH?</span><small>Srbija, Hrvatska, dijaspora</small></a>
+              <a href="#pitanja" class="mega-link"><span>Načini plaćanja?</span><small>Transfer ili kartica</small></a>
+            </div>
+          </div>
+          <div class="mega-footer">
+            <span>Imate pitanje koje nije ovdje?</span>
+            <a href="#kontakt" class="mega-all">Pitajte nas &rarr;</a>
+          </div>
+        </div>
+      </div>
+      <a href="#kontakt" class="nav-link">Kontakt</a>
+    </div>
+
+    <div class="nav-right">
+      <a href="#kontakt" class="btn-yellow">Kontaktirajte nas</a>
+      <button class="hamburger" id="hamburger" aria-label="Otvori meni">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+  </div>
+</nav>
+
+<!-- Mobile nav -->
+<div class="mob-nav" id="mobNav">
+  <a href="index.html"  class="mob-link active">Početna</a>
+  <a href="#"           class="mob-link">Usluge</a>
+  <a href="#"           class="mob-link">Suradnje</a>
+  <a href="#pitanja"    class="mob-link">FAQ</a>
+  <a href="#kontakt"    class="mob-link">Kontakt</a>
+  <a href="#kontakt"    class="btn-yellow mob-cta">Kontaktirajte nas</a>
+</div>
+
+<!-- ── HERO ──────────────────────────────────────────────────── -->
+<section class="hero" id="hero">
+  <div class="hero-grid-overlay" aria-hidden="true"></div>
+  <div class="hero-container">
+
+    <div class="hero-left">
+      <h1 class="hero-h">Web<br>koji<br><em>prodaje</em></h1>
+
+      <p class="hero-sub">
+        Pretvaramo posjetioce u kupce. Naši klijenti bilježe u prosjeku
+        <strong>40% više upita</strong> nakon redizajna. Specijaliziramo se za
+        izradu web stranica u Bosni i Hercegovini.
+      </p>
+
+      <div class="hero-proof">
+        <div class="hero-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <span class="hero-proof-txt">5.0 od <strong>200+ klijenata</strong></span>
+      </div>
+
+      <div class="hero-btns">
+        <a href="#kontakt" class="btn-yellow">Zatražite ponudu &rarr;</a>
+        <a href="#usluge"  class="btn-ghost">Pogledajte usluge</a>
+      </div>
+    </div>
+
+    <!-- Right: animated browser mockup -->
+    <div class="hero-visual" aria-hidden="true">
+
+      <div class="hv-badge hv-conv">
+        <div class="hv-bi green">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/>
+            <polyline points="16 7 22 7 22 13"/>
+          </svg>
+        </div>
+        <div>
+          <div class="hv-bl">Konverzije</div>
+          <div class="hv-bv">+147%</div>
+        </div>
+        <svg class="hv-spark" viewBox="0 0 60 24" fill="none">
+          <polyline points="0,20 10,15 22,17 34,9 46,5 60,2"
+            stroke="#10b981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </div>
+
+      <div class="hv-badge hv-speed">
+        <div class="hv-ring">
+          <svg viewBox="0 0 40 40">
+            <circle cx="20" cy="20" r="14" fill="none" stroke="rgba(191,95,255,.2)" stroke-width="3"/>
+            <circle class="ring-stroke" cx="20" cy="20" r="14" fill="none"
+              style="stroke:var(--yellow)" stroke-width="3"
+              stroke-dasharray="0 88" stroke-linecap="round"
+              transform="rotate(-90 20 20)"/>
+          </svg>
+          <span>99</span>
+        </div>
+        <div>
+          <div class="hv-bl">PageSpeed</div>
+          <div class="hv-bv yellow-txt">Odlično</div>
+        </div>
+      </div>
+
+      <div class="hv-browser">
+        <div class="hv-bar">
+          <div class="hv-traffic">
+            <span style="background:#EF4444"></span>
+            <span style="background:#F59E0B"></span>
+            <span style="background:#22C55E"></span>
+          </div>
+          <div class="hv-url">
+            <svg width="8" height="8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+            vasafirma.ba
+          </div>
+        </div>
+        <div class="hv-body">
+          <div class="hv-sidebar">
+            <div class="hv-slogo"></div>
+            <div class="hv-snav">
+              <div class="hv-si active"></div>
+              <div class="hv-si"></div>
+              <div class="hv-si"></div>
+              <div class="hv-si"></div>
+            </div>
+          </div>
+          <div class="hv-main">
+            <div class="hv-mhead">
+              <div class="hv-mh-t"></div>
+              <div class="hv-mh-s"></div>
+            </div>
+            <div class="hv-stats">
+              <div class="hv-stat anim-s1"><div class="hv-stat-n yellow-txt">2.4K</div><div class="hv-stat-l"></div></div>
+              <div class="hv-stat anim-s2"><div class="hv-stat-n">87%</div><div class="hv-stat-l"></div></div>
+              <div class="hv-stat anim-s3"><div class="hv-stat-n yellow-txt">€12K</div><div class="hv-stat-l"></div></div>
+            </div>
+            <div class="hv-chart">
+              <svg class="hv-chart-svg" viewBox="0 0 240 72" fill="none" preserveAspectRatio="none">
+                <defs>
+                  <linearGradient id="cg" x1="0" y1="0" x2="0" y2="1">
+                    <stop offset="0%" stop-color="#BF5FFF" stop-opacity="0.2"/>
+                    <stop offset="100%" stop-color="#BF5FFF" stop-opacity="0"/>
+                  </linearGradient>
+                </defs>
+                <path class="chart-fill"
+                  d="M0,64 L20,56 L50,50 L80,42 L110,36 L140,27 L170,21 L200,14 L240,5 L240,72 L0,72 Z"
+                  fill="url(#cg)"/>
+                <polyline class="chart-line"
+                  points="0,64 20,56 50,50 80,42 110,36 140,27 170,21 200,14 240,5"
+                  style="stroke:#BF5FFF" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+          </div>
+          <div class="hv-ring-panel">
+            <svg class="hv-ring-svg" viewBox="0 0 72 72">
+              <circle cx="36" cy="36" r="26" fill="none" stroke="#F3F4F6" stroke-width="7"/>
+              <circle class="donut-arc" cx="36" cy="36" r="26" fill="none"
+                style="stroke:#BF5FFF" stroke-width="7"
+                stroke-dasharray="0 163" stroke-linecap="round"
+                transform="rotate(-90 36 36)"/>
+            </svg>
+            <div class="hv-ring-info"><strong>74%</strong><span>Cilj</span></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ── TRUST BAR ─────────────────────────────────────────────── -->
+<div class="trust-bar">
+  <div class="trust-inner">
+    <div class="trust-item"><strong>7 dana</strong><span>Prva verzija</span></div>
+    <div class="trust-sep"></div>
+    <div class="trust-item"><strong>Besplatna</strong><span>Konzultacija</span></div>
+    <div class="trust-sep"></div>
+    <div class="trust-item"><strong>100%</strong><span>Garancija</span></div>
+  </div>
+</div>
+
+<!-- ── SOCIAL STRIP ─────────────────────────────────────────── -->
+<div class="social-strip">
+  <a href="https://www.instagram.com/motionvibedesign/" target="_blank" rel="noopener" class="soc-link" aria-label="Instagram">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" width="21" height="21"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".5" fill="currentColor" stroke="none"/></svg>
+  </a>
+  <a href="viber://chat?number=38762221577" class="soc-link" aria-label="Viber">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" width="21" height="21"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 11.7 19.79 19.79 0 0 1 1.64 3.1 2 2 0 0 1 3.61 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.6a16 16 0 0 0 6 6l.96-.96a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21.5 16z"/></svg>
+  </a>
+  <a href="#" class="soc-link" aria-label="Email">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" width="21" height="21"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+  </a>
+  <a href="https://wa.me/38762221577" target="_blank" rel="noopener" class="soc-link" aria-label="WhatsApp">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" width="21" height="21"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+  </a>
+</div>
+
+<!-- ── PORTFOLIO REEL ──────────────────────────────────────── -->
+<div class="reel-sec">
+  <div class="reel-items">
+
+    <!-- 1 · Dark Agency -->
+    <div class="lp lp--mock" tabindex="0" role="button" aria-label="Pogledaj dizajn">
+      <div class="lp-screen"><div class="lpm" style="--mc:#BF5FFF;--mb:#0A0907;--mh:#130F0A;--ms:#1C1510;--mg:linear-gradient(135deg,#1c1200,#0a0907)"><div class="lpm-nav"><div class="lpm-logo"></div><div class="lpm-navl"><i></i><i></i><i></i></div><div class="lpm-ncta"></div></div><div class="lpm-hero"><div class="lpm-tag"></div><div class="lpm-h1" style="width:68%"></div><div class="lpm-h1 lpm-h1--ac" style="width:50%"></div><div class="lpm-sub" style="width:84%"></div><div class="lpm-sub" style="width:62%"></div><div class="lpm-btns"><div class="lpm-bp"></div><div class="lpm-bo"></div></div></div><div class="lpm-grid"><div class="lpm-card"><div class="lpm-ci"></div><div class="lpm-ct"><span style="width:65%"></span><span style="width:48%"></span></div></div><div class="lpm-card"><div class="lpm-ci"></div><div class="lpm-ct"><span style="width:72%"></span><span style="width:55%"></span></div></div><div class="lpm-card"><div class="lpm-ci"></div><div class="lpm-ct"><span style="width:58%"></span><span style="width:70%"></span></div></div></div></div><div class="lp-zoom" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" width="18" height="18"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg></div></div>
+      <div class="lp-base"></div>
+    </div>
+
+    <!-- 2 · Restaurant warm -->
+    <div class="lp lp--mock" tabindex="0" role="button" aria-label="Pogledaj dizajn">
+      <div class="lp-screen"><div class="lpm" style="--mc:#F59E0B;--mb:#17100A;--mh:#221508;--ms:#2A1C0D;--mg:linear-gradient(135deg,#2e1e0a,#17100a)"><div class="lpm-nav"><div class="lpm-logo"></div><div class="lpm-navl"><i></i><i></i><i></i></div><div class="lpm-ncta"></div></div><div class="lpm-hero lpm-hero--split"><div class="lpm-hs-text"><div class="lpm-tag"></div><div class="lpm-h1" style="width:90%"></div><div class="lpm-h1" style="width:75%"></div><div class="lpm-sub" style="width:95%"></div><div class="lpm-btns"><div class="lpm-bp"></div></div></div><div class="lpm-hs-img" style="background:linear-gradient(145deg,#3a2010,#2a1608)"><div class="lpm-imgblock"></div></div></div><div class="lpm-grid lpm-grid--4"><div class="lpm-card lpm-card--sm"><div class="lpm-ci"></div><div class="lpm-ct"><span style="width:80%"></span></div></div><div class="lpm-card lpm-card--sm"><div class="lpm-ci"></div><div class="lpm-ct"><span style="width:65%"></span></div></div><div class="lpm-card lpm-card--sm"><div class="lpm-ci"></div><div class="lpm-ct"><span style="width:75%"></span></div></div><div class="lpm-card lpm-card--sm"><div class="lpm-ci"></div><div class="lpm-ct"><span style="width:70%"></span></div></div></div></div><div class="lp-zoom" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" width="18" height="18"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg></div></div>
+      <div class="lp-base"></div>
+    </div>
+
+    <!-- 3 · SaaS tech blue -->
+    <div class="lp lp--mock" tabindex="0" role="button" aria-label="Pogledaj dizajn">
+      <div class="lp-screen"><div class="lpm" style="--mc:#60A5FA;--mb:#0B0F1E;--mh:#0D1428;--ms:#111D35;--mg:linear-gradient(135deg,#0d1e4a,#0b0f1e)"><div class="lpm-nav"><div class="lpm-logo"></div><div class="lpm-navl"><i></i><i></i><i></i><i></i></div><div class="lpm-ncta"></div></div><div class="lpm-hero lpm-hero--split"><div class="lpm-hs-text"><div class="lpm-tag"></div><div class="lpm-h1" style="width:88%"></div><div class="lpm-h1" style="width:70%"></div><div class="lpm-sub" style="width:92%"></div><div class="lpm-sub" style="width:76%"></div><div class="lpm-btns"><div class="lpm-bp"></div><div class="lpm-bo"></div></div></div><div class="lpm-hs-dash" style="background:#111D35;border:1px solid rgba(96,165,250,.15);border-radius:4px"><div class="lpm-dash-bar"></div><div class="lpm-dash-row"><div class="lpm-dash-stat" style="border-color:rgba(96,165,250,.2)"></div><div class="lpm-dash-stat" style="border-color:rgba(96,165,250,.2)"></div></div><div class="lpm-dash-chart"></div></div></div><div class="lpm-statbar"><div class="lpm-stat"><span class="lpm-stat-n"></span><span class="lpm-stat-l" style="width:55%"></span></div><div class="lpm-stat"><span class="lpm-stat-n"></span><span class="lpm-stat-l" style="width:40%"></span></div><div class="lpm-stat"><span class="lpm-stat-n"></span><span class="lpm-stat-l" style="width:60%"></span></div></div></div><div class="lp-zoom" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" width="18" height="18"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg></div></div>
+      <div class="lp-base"></div>
+    </div>
+
+    <!-- 4 · Real Estate dark gold -->
+    <div class="lp lp--mock" tabindex="0" role="button" aria-label="Pogledaj dizajn">
+      <div class="lp-screen"><div class="lpm" style="--mc:#D4A90B;--mb:#111827;--mh:#1F2937;--ms:#1F2937;--mg:linear-gradient(160deg,#1f2937,#111827)"><div class="lpm-nav"><div class="lpm-logo"></div><div class="lpm-navl"><i></i><i></i><i></i></div><div class="lpm-ncta"></div></div><div class="lpm-hero"><div class="lpm-tag"></div><div class="lpm-h1" style="width:74%"></div><div class="lpm-h1" style="width:58%"></div><div class="lpm-sub" style="width:88%"></div><div class="lpm-btns"><div class="lpm-bp"></div></div></div><div class="lpm-grid"><div class="lpm-card lpm-card--prop"><div class="lpm-prop-img"></div><div class="lpm-prop-info"><div class="lpm-ct"><span style="width:80%" class="lpm-ct-bold"></span><span style="width:55%"></span></div></div></div><div class="lpm-card lpm-card--prop"><div class="lpm-prop-img" style="opacity:.7"></div><div class="lpm-prop-info"><div class="lpm-ct"><span style="width:75%" class="lpm-ct-bold"></span><span style="width:60%"></span></div></div></div><div class="lpm-card lpm-card--prop"><div class="lpm-prop-img" style="opacity:.85"></div><div class="lpm-prop-info"><div class="lpm-ct"><span style="width:70%" class="lpm-ct-bold"></span><span style="width:50%"></span></div></div></div></div></div><div class="lp-zoom" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" width="18" height="18"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg></div></div>
+      <div class="lp-base"></div>
+    </div>
+
+    <!-- 5 · E-commerce light -->
+    <div class="lp lp--mock" tabindex="0" role="button" aria-label="Pogledaj dizajn">
+      <div class="lp-screen"><div class="lpm lpm--light" style="--mc:#6366F1;--mb:#F8F9FF;--mh:#FFFFFF;--ms:#F0F1FF;--mg:linear-gradient(135deg,#EEF0FF,#F8F9FF)"><div class="lpm-nav lpm-nav--light"><div class="lpm-logo"></div><div class="lpm-navl"><i></i><i></i><i></i><i></i></div><div class="lpm-ncta"></div></div><div class="lpm-hero lpm-hero--light"><div class="lpm-tag"></div><div class="lpm-h1 lpm-h1--dark" style="width:66%"></div><div class="lpm-h1 lpm-h1--dark lpm-h1--ac" style="width:50%"></div><div class="lpm-sub lpm-sub--dark" style="width:80%"></div><div class="lpm-btns"><div class="lpm-bp"></div><div class="lpm-bo lpm-bo--dark"></div></div></div><div class="lpm-grid lpm-grid--4"><div class="lpm-card lpm-card--product"><div class="lpm-prod-img"></div><div class="lpm-ct lpm-ct--dark"><span style="width:75%"></span><span style="width:40%" class="lpm-ct-bold"></span></div></div><div class="lpm-card lpm-card--product"><div class="lpm-prod-img" style="opacity:.8"></div><div class="lpm-ct lpm-ct--dark"><span style="width:68%"></span><span style="width:45%" class="lpm-ct-bold"></span></div></div><div class="lpm-card lpm-card--product"><div class="lpm-prod-img" style="opacity:.9"></div><div class="lpm-ct lpm-ct--dark"><span style="width:80%"></span><span style="width:38%" class="lpm-ct-bold"></span></div></div><div class="lpm-card lpm-card--product"><div class="lpm-prod-img" style="opacity:.75"></div><div class="lpm-ct lpm-ct--dark"><span style="width:72%"></span><span style="width:42%" class="lpm-ct-bold"></span></div></div></div></div><div class="lp-zoom" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" width="18" height="18"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg></div></div>
+      <div class="lp-base"></div>
+    </div>
+
+    <!-- 6 · Healthcare mint -->
+    <div class="lp lp--mock" tabindex="0" role="button" aria-label="Pogledaj dizajn">
+      <div class="lp-screen"><div class="lpm lpm--light" style="--mc:#0D9488;--mb:#F0FDFB;--mh:#FFFFFF;--ms:#CCFBF1;--mg:linear-gradient(135deg,#E0FAF6,#F0FDFB)"><div class="lpm-nav lpm-nav--light"><div class="lpm-logo"></div><div class="lpm-navl"><i></i><i></i><i></i></div><div class="lpm-ncta"></div></div><div class="lpm-hero lpm-hero--light lpm-hero--center"><div class="lpm-tag"></div><div class="lpm-h1 lpm-h1--dark" style="width:72%;margin:0 auto"></div><div class="lpm-h1 lpm-h1--dark" style="width:56%;margin:0 auto"></div><div class="lpm-sub lpm-sub--dark" style="width:82%;margin:0 auto"></div><div class="lpm-btns" style="justify-content:center"><div class="lpm-bp"></div></div></div><div class="lpm-grid"><div class="lpm-card lpm-card--health"><div class="lpm-ci lpm-ci--bg"></div><div class="lpm-ct lpm-ct--dark"><span style="width:80%"></span><span style="width:65%"></span><span style="width:55%"></span></div></div><div class="lpm-card lpm-card--health"><div class="lpm-ci lpm-ci--bg"></div><div class="lpm-ct lpm-ct--dark"><span style="width:75%"></span><span style="width:60%"></span><span style="width:70%"></span></div></div><div class="lpm-card lpm-card--health"><div class="lpm-ci lpm-ci--bg"></div><div class="lpm-ct lpm-ct--dark"><span style="width:85%"></span><span style="width:55%"></span><span style="width:65%"></span></div></div></div></div><div class="lp-zoom" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" width="18" height="18"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg></div></div>
+      <div class="lp-base"></div>
+    </div>
+
+    <!-- 7 · Law firm navy -->
+    <div class="lp lp--mock" tabindex="0" role="button" aria-label="Pogledaj dizajn">
+      <div class="lp-screen"><div class="lpm" style="--mc:#94A3B8;--mb:#0F172A;--mh:#1E293B;--ms:#1E293B;--mg:linear-gradient(160deg,#1e293b,#0f172a)"><div class="lpm-nav"><div class="lpm-logo" style="width:28px"></div><div class="lpm-navl"><i></i><i></i><i></i><i></i><i></i></div><div class="lpm-ncta"></div></div><div class="lpm-hero lpm-hero--law"><div class="lpm-law-line"></div><div class="lpm-h1 lpm-h1--lg" style="width:80%"></div><div class="lpm-h1 lpm-h1--lg" style="width:62%"></div><div class="lpm-h1 lpm-h1--lg" style="width:45%"></div><div class="lpm-sub" style="width:90%;margin-top:3px"></div><div class="lpm-sub" style="width:72%"></div><div class="lpm-btns" style="margin-top:5px"><div class="lpm-bp lpm-bp--outline"></div></div></div><div class="lpm-grid"><div class="lpm-card lpm-card--law"><div class="lpm-ct"><span style="width:70%" class="lpm-ct-bold"></span><span style="width:85%"></span><span style="width:78%"></span></div></div><div class="lpm-card lpm-card--law"><div class="lpm-ct"><span style="width:60%" class="lpm-ct-bold"></span><span style="width:80%"></span><span style="width:72%"></span></div></div><div class="lpm-card lpm-card--law"><div class="lpm-ct"><span style="width:75%" class="lpm-ct-bold"></span><span style="width:88%"></span><span style="width:65%"></span></div></div></div></div><div class="lp-zoom" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" width="18" height="18"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg></div></div>
+      <div class="lp-base"></div>
+    </div>
+
+    <!-- 8 · Fitness black/red -->
+    <div class="lp lp--mock" tabindex="0" role="button" aria-label="Pogledaj dizajn">
+      <div class="lp-screen"><div class="lpm" style="--mc:#F97316;--mb:#0A0A0A;--mh:#141414;--ms:#1A1A1A;--mg:linear-gradient(160deg,#2a0d00,#0a0a0a)"><div class="lpm-nav"><div class="lpm-logo"></div><div class="lpm-navl"><i></i><i></i><i></i></div><div class="lpm-ncta"></div></div><div class="lpm-hero lpm-hero--full"><div class="lpm-full-overlay"></div><div class="lpm-full-content"><div class="lpm-tag"></div><div class="lpm-h1 lpm-h1--xl" style="width:85%"></div><div class="lpm-h1 lpm-h1--xl" style="width:65%"></div><div class="lpm-h1 lpm-h1--xl lpm-h1--ac" style="width:50%"></div><div class="lpm-btns" style="margin-top:6px"><div class="lpm-bp lpm-bp--wide"></div></div></div></div><div class="lpm-featbar"><div class="lpm-feat"><div class="lpm-fnum"></div><div class="lpm-flab" style="width:70%"></div></div><div class="lpm-feat"><div class="lpm-fnum"></div><div class="lpm-flab" style="width:60%"></div></div><div class="lpm-feat"><div class="lpm-fnum"></div><div class="lpm-flab" style="width:75%"></div></div></div></div><div class="lp-zoom" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" width="18" height="18"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg></div></div>
+      <div class="lp-base"></div>
+    </div>
+
+    <!-- 9 · Travel deep green -->
+    <div class="lp lp--mock" tabindex="0" role="button" aria-label="Pogledaj dizajn">
+      <div class="lp-screen"><div class="lpm" style="--mc:#34D399;--mb:#052E16;--mh:#064E3B;--ms:#065F46;--mg:linear-gradient(135deg,#064e3b,#052e16)"><div class="lpm-nav"><div class="lpm-logo"></div><div class="lpm-navl"><i></i><i></i><i></i></div><div class="lpm-ncta"></div></div><div class="lpm-hero"><div class="lpm-tag"></div><div class="lpm-h1" style="width:70%"></div><div class="lpm-h1" style="width:52%"></div><div class="lpm-sub" style="width:85%"></div><div class="lpm-btns"><div class="lpm-bp"></div><div class="lpm-bo"></div></div></div><div class="lpm-grid lpm-grid--dest"><div class="lpm-card lpm-card--dest"><div class="lpm-dest-img"></div><div class="lpm-ct" style="padding:3px 3px 0"><span style="width:70%"></span><span style="width:50%"></span></div></div><div class="lpm-card lpm-card--dest"><div class="lpm-dest-img" style="opacity:.85"></div><div class="lpm-ct" style="padding:3px 3px 0"><span style="width:65%"></span><span style="width:55%"></span></div></div><div class="lpm-card lpm-card--dest"><div class="lpm-dest-img" style="opacity:.7"></div><div class="lpm-ct" style="padding:3px 3px 0"><span style="width:75%"></span><span style="width:45%"></span></div></div></div></div><div class="lp-zoom" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" width="18" height="18"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg></div></div>
+      <div class="lp-base"></div>
+    </div>
+
+    <!-- loop duplicates (aria-hidden, tabindex -1) -->
+    <div class="lp lp--mock" tabindex="-1" aria-hidden="true"><div class="lp-screen"><div class="lpm" style="--mc:#BF5FFF;--mb:#0A0907;--mh:#130F0A;--ms:#1C1510;--mg:linear-gradient(135deg,#1c1200,#0a0907)"><div class="lpm-nav"><div class="lpm-logo"></div><div class="lpm-navl"><i></i><i></i><i></i></div><div class="lpm-ncta"></div></div><div class="lpm-hero"><div class="lpm-tag"></div><div class="lpm-h1" style="width:68%"></div><div class="lpm-h1 lpm-h1--ac" style="width:50%"></div><div class="lpm-sub" style="width:84%"></div><div class="lpm-sub" style="width:62%"></div><div class="lpm-btns"><div class="lpm-bp"></div><div class="lpm-bo"></div></div></div><div class="lpm-grid"><div class="lpm-card"><div class="lpm-ci"></div><div class="lpm-ct"><span style="width:65%"></span><span style="width:48%"></span></div></div><div class="lpm-card"><div class="lpm-ci"></div><div class="lpm-ct"><span style="width:72%"></span><span style="width:55%"></span></div></div><div class="lpm-card"><div class="lpm-ci"></div><div class="lpm-ct"><span style="width:58%"></span><span style="width:70%"></span></div></div></div></div><div class="lp-zoom" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" width="18" height="18"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg></div></div><div class="lp-base"></div></div>
+    <div class="lp lp--mock" tabindex="-1" aria-hidden="true"><div class="lp-screen"><div class="lpm" style="--mc:#F59E0B;--mb:#17100A;--mh:#221508;--ms:#2A1C0D;--mg:linear-gradient(135deg,#2e1e0a,#17100a)"><div class="lpm-nav"><div class="lpm-logo"></div><div class="lpm-navl"><i></i><i></i><i></i></div><div class="lpm-ncta"></div></div><div class="lpm-hero lpm-hero--split"><div class="lpm-hs-text"><div class="lpm-tag"></div><div class="lpm-h1" style="width:90%"></div><div class="lpm-h1" style="width:75%"></div><div class="lpm-sub" style="width:95%"></div><div class="lpm-btns"><div class="lpm-bp"></div></div></div><div class="lpm-hs-img" style="background:linear-gradient(145deg,#3a2010,#2a1608)"><div class="lpm-imgblock"></div></div></div><div class="lpm-grid lpm-grid--4"><div class="lpm-card lpm-card--sm"><div class="lpm-ci"></div><div class="lpm-ct"><span style="width:80%"></span></div></div><div class="lpm-card lpm-card--sm"><div class="lpm-ci"></div><div class="lpm-ct"><span style="width:65%"></span></div></div><div class="lpm-card lpm-card--sm"><div class="lpm-ci"></div><div class="lpm-ct"><span style="width:75%"></span></div></div><div class="lpm-card lpm-card--sm"><div class="lpm-ci"></div><div class="lpm-ct"><span style="width:70%"></span></div></div></div></div><div class="lp-zoom" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" width="18" height="18"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg></div></div><div class="lp-base"></div></div>
+    <div class="lp lp--mock" tabindex="-1" aria-hidden="true"><div class="lp-screen"><div class="lpm" style="--mc:#60A5FA;--mb:#0B0F1E;--mh:#0D1428;--ms:#111D35;--mg:linear-gradient(135deg,#0d1e4a,#0b0f1e)"><div class="lpm-nav"><div class="lpm-logo"></div><div class="lpm-navl"><i></i><i></i><i></i><i></i></div><div class="lpm-ncta"></div></div><div class="lpm-hero lpm-hero--split"><div class="lpm-hs-text"><div class="lpm-tag"></div><div class="lpm-h1" style="width:88%"></div><div class="lpm-h1" style="width:70%"></div><div class="lpm-sub" style="width:92%"></div><div class="lpm-sub" style="width:76%"></div><div class="lpm-btns"><div class="lpm-bp"></div><div class="lpm-bo"></div></div></div><div class="lpm-hs-dash" style="background:#111D35;border:1px solid rgba(96,165,250,.15);border-radius:4px"><div class="lpm-dash-bar"></div><div class="lpm-dash-row"><div class="lpm-dash-stat" style="border-color:rgba(96,165,250,.2)"></div><div class="lpm-dash-stat" style="border-color:rgba(96,165,250,.2)"></div></div><div class="lpm-dash-chart"></div></div></div><div class="lpm-statbar"><div class="lpm-stat"><span class="lpm-stat-n"></span><span class="lpm-stat-l" style="width:55%"></span></div><div class="lpm-stat"><span class="lpm-stat-n"></span><span class="lpm-stat-l" style="width:40%"></span></div><div class="lpm-stat"><span class="lpm-stat-n"></span><span class="lpm-stat-l" style="width:60%"></span></div></div></div><div class="lp-zoom" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" width="18" height="18"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg></div></div><div class="lp-base"></div></div>
+    <div class="lp lp--mock" tabindex="-1" aria-hidden="true"><div class="lp-screen"><div class="lpm" style="--mc:#D4A90B;--mb:#111827;--mh:#1F2937;--ms:#1F2937;--mg:linear-gradient(160deg,#1f2937,#111827)"><div class="lpm-nav"><div class="lpm-logo"></div><div class="lpm-navl"><i></i><i></i><i></i></div><div class="lpm-ncta"></div></div><div class="lpm-hero"><div class="lpm-tag"></div><div class="lpm-h1" style="width:74%"></div><div class="lpm-h1" style="width:58%"></div><div class="lpm-sub" style="width:88%"></div><div class="lpm-btns"><div class="lpm-bp"></div></div></div><div class="lpm-grid"><div class="lpm-card lpm-card--prop"><div class="lpm-prop-img"></div><div class="lpm-prop-info"><div class="lpm-ct"><span style="width:80%" class="lpm-ct-bold"></span><span style="width:55%"></span></div></div></div><div class="lpm-card lpm-card--prop"><div class="lpm-prop-img" style="opacity:.7"></div><div class="lpm-prop-info"><div class="lpm-ct"><span style="width:75%" class="lpm-ct-bold"></span><span style="width:60%"></span></div></div></div><div class="lpm-card lpm-card--prop"><div class="lpm-prop-img" style="opacity:.85"></div><div class="lpm-prop-info"><div class="lpm-ct"><span style="width:70%" class="lpm-ct-bold"></span><span style="width:50%"></span></div></div></div></div></div><div class="lp-zoom" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" width="18" height="18"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg></div></div><div class="lp-base"></div></div>
+    <div class="lp lp--mock" tabindex="-1" aria-hidden="true"><div class="lp-screen"><div class="lpm lpm--light" style="--mc:#6366F1;--mb:#F8F9FF;--mh:#FFFFFF;--ms:#F0F1FF;--mg:linear-gradient(135deg,#EEF0FF,#F8F9FF)"><div class="lpm-nav lpm-nav--light"><div class="lpm-logo"></div><div class="lpm-navl"><i></i><i></i><i></i><i></i></div><div class="lpm-ncta"></div></div><div class="lpm-hero lpm-hero--light"><div class="lpm-tag"></div><div class="lpm-h1 lpm-h1--dark" style="width:66%"></div><div class="lpm-h1 lpm-h1--dark lpm-h1--ac" style="width:50%"></div><div class="lpm-sub lpm-sub--dark" style="width:80%"></div><div class="lpm-btns"><div class="lpm-bp"></div><div class="lpm-bo lpm-bo--dark"></div></div></div><div class="lpm-grid lpm-grid--4"><div class="lpm-card lpm-card--product"><div class="lpm-prod-img"></div><div class="lpm-ct lpm-ct--dark"><span style="width:75%"></span><span style="width:40%" class="lpm-ct-bold"></span></div></div><div class="lpm-card lpm-card--product"><div class="lpm-prod-img" style="opacity:.8"></div><div class="lpm-ct lpm-ct--dark"><span style="width:68%"></span><span style="width:45%" class="lpm-ct-bold"></span></div></div><div class="lpm-card lpm-card--product"><div class="lpm-prod-img" style="opacity:.9"></div><div class="lpm-ct lpm-ct--dark"><span style="width:80%"></span><span style="width:38%" class="lpm-ct-bold"></span></div></div><div class="lpm-card lpm-card--product"><div class="lpm-prod-img" style="opacity:.75"></div><div class="lpm-ct lpm-ct--dark"><span style="width:72%"></span><span style="width:42%" class="lpm-ct-bold"></span></div></div></div></div><div class="lp-zoom" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" width="18" height="18"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg></div></div><div class="lp-base"></div></div>
+    <div class="lp lp--mock" tabindex="-1" aria-hidden="true"><div class="lp-screen"><div class="lpm lpm--light" style="--mc:#0D9488;--mb:#F0FDFB;--mh:#FFFFFF;--ms:#CCFBF1;--mg:linear-gradient(135deg,#E0FAF6,#F0FDFB)"><div class="lpm-nav lpm-nav--light"><div class="lpm-logo"></div><div class="lpm-navl"><i></i><i></i><i></i></div><div class="lpm-ncta"></div></div><div class="lpm-hero lpm-hero--light lpm-hero--center"><div class="lpm-tag"></div><div class="lpm-h1 lpm-h1--dark" style="width:72%;margin:0 auto"></div><div class="lpm-h1 lpm-h1--dark" style="width:56%;margin:0 auto"></div><div class="lpm-sub lpm-sub--dark" style="width:82%;margin:0 auto"></div><div class="lpm-btns" style="justify-content:center"><div class="lpm-bp"></div></div></div><div class="lpm-grid"><div class="lpm-card lpm-card--health"><div class="lpm-ci lpm-ci--bg"></div><div class="lpm-ct lpm-ct--dark"><span style="width:80%"></span><span style="width:65%"></span><span style="width:55%"></span></div></div><div class="lpm-card lpm-card--health"><div class="lpm-ci lpm-ci--bg"></div><div class="lpm-ct lpm-ct--dark"><span style="width:75%"></span><span style="width:60%"></span><span style="width:70%"></span></div></div><div class="lpm-card lpm-card--health"><div class="lpm-ci lpm-ci--bg"></div><div class="lpm-ct lpm-ct--dark"><span style="width:85%"></span><span style="width:55%"></span><span style="width:65%"></span></div></div></div></div><div class="lp-zoom" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" width="18" height="18"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg></div></div><div class="lp-base"></div></div>
+    <div class="lp lp--mock" tabindex="-1" aria-hidden="true"><div class="lp-screen"><div class="lpm" style="--mc:#94A3B8;--mb:#0F172A;--mh:#1E293B;--ms:#1E293B;--mg:linear-gradient(160deg,#1e293b,#0f172a)"><div class="lpm-nav"><div class="lpm-logo" style="width:28px"></div><div class="lpm-navl"><i></i><i></i><i></i><i></i><i></i></div><div class="lpm-ncta"></div></div><div class="lpm-hero lpm-hero--law"><div class="lpm-law-line"></div><div class="lpm-h1 lpm-h1--lg" style="width:80%"></div><div class="lpm-h1 lpm-h1--lg" style="width:62%"></div><div class="lpm-h1 lpm-h1--lg" style="width:45%"></div><div class="lpm-sub" style="width:90%;margin-top:3px"></div><div class="lpm-sub" style="width:72%"></div><div class="lpm-btns" style="margin-top:5px"><div class="lpm-bp lpm-bp--outline"></div></div></div><div class="lpm-grid"><div class="lpm-card lpm-card--law"><div class="lpm-ct"><span style="width:70%" class="lpm-ct-bold"></span><span style="width:85%"></span><span style="width:78%"></span></div></div><div class="lpm-card lpm-card--law"><div class="lpm-ct"><span style="width:60%" class="lpm-ct-bold"></span><span style="width:80%"></span><span style="width:72%"></span></div></div><div class="lpm-card lpm-card--law"><div class="lpm-ct"><span style="width:75%" class="lpm-ct-bold"></span><span style="width:88%"></span><span style="width:65%"></span></div></div></div></div><div class="lp-zoom" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" width="18" height="18"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg></div></div><div class="lp-base"></div></div>
+    <div class="lp lp--mock" tabindex="-1" aria-hidden="true"><div class="lp-screen"><div class="lpm" style="--mc:#F97316;--mb:#0A0A0A;--mh:#141414;--ms:#1A1A1A;--mg:linear-gradient(160deg,#2a0d00,#0a0a0a)"><div class="lpm-nav"><div class="lpm-logo"></div><div class="lpm-navl"><i></i><i></i><i></i></div><div class="lpm-ncta"></div></div><div class="lpm-hero lpm-hero--full"><div class="lpm-full-overlay"></div><div class="lpm-full-content"><div class="lpm-tag"></div><div class="lpm-h1 lpm-h1--xl" style="width:85%"></div><div class="lpm-h1 lpm-h1--xl" style="width:65%"></div><div class="lpm-h1 lpm-h1--xl lpm-h1--ac" style="width:50%"></div><div class="lpm-btns" style="margin-top:6px"><div class="lpm-bp lpm-bp--wide"></div></div></div></div><div class="lpm-featbar"><div class="lpm-feat"><div class="lpm-fnum"></div><div class="lpm-flab" style="width:70%"></div></div><div class="lpm-feat"><div class="lpm-fnum"></div><div class="lpm-flab" style="width:60%"></div></div><div class="lpm-feat"><div class="lpm-fnum"></div><div class="lpm-flab" style="width:75%"></div></div></div></div><div class="lp-zoom" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" width="18" height="18"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg></div></div><div class="lp-base"></div></div>
+    <div class="lp lp--mock" tabindex="-1" aria-hidden="true"><div class="lp-screen"><div class="lpm" style="--mc:#34D399;--mb:#052E16;--mh:#064E3B;--ms:#065F46;--mg:linear-gradient(135deg,#064e3b,#052e16)"><div class="lpm-nav"><div class="lpm-logo"></div><div class="lpm-navl"><i></i><i></i><i></i></div><div class="lpm-ncta"></div></div><div class="lpm-hero"><div class="lpm-tag"></div><div class="lpm-h1" style="width:70%"></div><div class="lpm-h1" style="width:52%"></div><div class="lpm-sub" style="width:85%"></div><div class="lpm-btns"><div class="lpm-bp"></div><div class="lpm-bo"></div></div></div><div class="lpm-grid lpm-grid--dest"><div class="lpm-card lpm-card--dest"><div class="lpm-dest-img"></div><div class="lpm-ct" style="padding:3px 3px 0"><span style="width:70%"></span><span style="width:50%"></span></div></div><div class="lpm-card lpm-card--dest"><div class="lpm-dest-img" style="opacity:.85"></div><div class="lpm-ct" style="padding:3px 3px 0"><span style="width:65%"></span><span style="width:55%"></span></div></div><div class="lpm-card lpm-card--dest"><div class="lpm-dest-img" style="opacity:.7"></div><div class="lpm-ct" style="padding:3px 3px 0"><span style="width:75%"></span><span style="width:45%"></span></div></div></div></div><div class="lp-zoom" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" width="18" height="18"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg></div></div><div class="lp-base"></div></div>
+
+  </div>
+</div>
+
+<!-- ── LIGHTBOX ───────────────────────────────────────────── -->
+<div class="lbox" id="lbox" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Pregled dizajna">
+  <div class="lbox-overlay"></div>
+  <button class="lbox-close" id="lboxClose" aria-label="Zatvori">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" width="20" height="20"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+  </button>
+  <div class="lbox-frame" id="lboxFrame"></div>
+</div>
+
+<!-- ── RESULTS / STATS ───────────────────────────────────────── -->
+<section class="results-sec">
+  <div class="results-inner">
+    <div class="result-item">
+      <div class="result-val"><span class="result-num" data-target="200">0</span><span class="result-suf">+</span></div>
+      <span class="result-label">Uspješnih projekata</span>
+    </div>
+    <div class="result-divider"></div>
+    <div class="result-item">
+      <div class="result-val"><span class="result-num" data-target="98">0</span><span class="result-suf">%</span></div>
+      <span class="result-label">Zadovoljnih klijenata</span>
+    </div>
+    <div class="result-divider"></div>
+    <div class="result-item">
+      <div class="result-val"><span class="result-num" data-target="40">0</span><span class="result-suf">%</span></div>
+      <span class="result-label">Više upita prosječno</span>
+    </div>
+    <div class="result-divider"></div>
+    <div class="result-item">
+      <div class="result-val"><span class="result-num" data-target="7">0</span><span class="result-suf"> dana</span></div>
+      <span class="result-label">Prva verzija sajta</span>
+    </div>
+  </div>
+</section>
+
+<!-- ── TECH STACK ─────────────────────────────────────────── -->
+<section class="tech-sec">
+  <div class="tech-float-outer">
+
+    <!-- Central heading -->
+    <div class="tech-float-center">
+      <div class="tech-eyebrow">Naš tech stack</div>
+      <h2 class="tech-heading">Tehnologije i alati kojima<br><em>gradimo vaš uspjeh</em></h2>
+    </div>
+
+    <!-- LEFT outer — simetrično s desnim -->
+    <div class="tfi" style="--tf-t:8%;  --tf-l:2%;  --tf-dur:5.3s; --tf-d:0s;   --tf-dir:alternate">
+      <img src="https://cdn.simpleicons.org/html5/E34F26" width="56" height="56" alt="HTML5" loading="lazy">
+      <span>HTML5</span>
+    </div>
+    <div class="tfi" style="--tf-t:32%; --tf-l:2%;  --tf-dur:6.1s; --tf-d:.7s;  --tf-dir:alternate-reverse">
+      <svg width="56" height="56" viewBox="0 0 24 24" fill="#264DE4" aria-hidden="true"><path d="M1.5 0h21l-1.91 21.563L11.977 24l-8.565-2.438L1.5 0zm17.09 4.413L5.41 4.41l.213 2.622 10.125.002-.255 2.716h-6.64l.24 2.573h6.182l-.366 3.523-2.91.804-2.956-.81-.188-2.11h-2.61l.29 3.855L12 19.288l5.373-1.53L18.59 4.414z"/></svg>
+      <span>CSS3</span>
+    </div>
+    <div class="tfi" style="--tf-t:57%; --tf-l:2%;  --tf-dur:4.9s; --tf-d:1.4s; --tf-dir:alternate">
+      <img src="https://cdn.simpleicons.org/javascript/F7DF1E" width="56" height="56" alt="JavaScript" loading="lazy">
+      <span>JavaScript</span>
+    </div>
+    <div class="tfi" style="--tf-t:80%; --tf-l:2%;  --tf-dur:5.7s; --tf-d:.3s;  --tf-dir:alternate-reverse">
+      <img src="https://cdn.simpleicons.org/nextdotjs/d4d4d8" width="56" height="56" alt="Next.js" loading="lazy">
+      <span>Next.js</span>
+    </div>
+
+    <!-- LEFT inner -->
+    <div class="tfi" style="--tf-t:20%; --tf-l:20%; --tf-dur:6.8s; --tf-d:2.1s; --tf-dir:alternate">
+      <img src="https://cdn.simpleicons.org/wordpress/21A0D2" width="56" height="56" alt="WordPress" loading="lazy">
+      <span>WordPress</span>
+    </div>
+    <div class="tfi" style="--tf-t:65%; --tf-l:20%; --tf-dur:5.5s; --tf-d:1.1s; --tf-dir:alternate-reverse">
+      <img src="https://cdn.simpleicons.org/woocommerce/7F54B3" width="56" height="56" alt="WooCommerce" loading="lazy">
+      <span>WooCommerce</span>
+    </div>
+
+    <!-- CENTER top + bottom -->
+    <div class="tfi" style="--tf-t:6%;  --tf-l:42%; --tf-dur:5.9s; --tf-d:2.5s; --tf-dir:alternate">
+      <svg width="56" height="56" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="11" fill="#34A853" opacity=".15"/><path d="M13 4l-4 8h3l-2 8 8-10h-4l3-6z" fill="#34A853"/></svg>
+      <span>PageSpeed</span>
+    </div>
+    <div class="tfi" style="--tf-t:82%; --tf-l:42%; --tf-dur:6.4s; --tf-d:.9s;  --tf-dir:alternate-reverse">
+      <svg width="56" height="56" viewBox="0 0 64 64" fill="none" aria-hidden="true"><circle cx="32" cy="32" r="31" fill="#65C54E" opacity=".15"/><ellipse cx="32" cy="38" rx="14" ry="10" fill="#65C54E"/><circle cx="24" cy="30" r="5" fill="#65C54E"/><circle cx="40" cy="30" r="5" fill="#65C54E"/><circle cx="24" cy="29" r="2" fill="#0A0907"/><circle cx="40" cy="29" r="2" fill="#0A0907"/><path d="M26 44 Q32 50 38 44" stroke="#0A0907" stroke-width="2" fill="none" stroke-linecap="round"/></svg>
+      <span>Screaming Frog</span>
+    </div>
+
+    <!-- RIGHT inner — ogledalo lijevog -->
+    <div class="tfi" style="--tf-t:20%; --tf-l:68%; --tf-dur:7.2s; --tf-d:1.8s; --tf-dir:alternate-reverse">
+      <img src="https://cdn.simpleicons.org/semrush/FF6600" width="56" height="56" alt="SEMrush" loading="lazy">
+      <span>SEMrush</span>
+    </div>
+    <div class="tfi" style="--tf-t:65%; --tf-l:68%; --tf-dur:5.2s; --tf-d:0.5s; --tf-dir:alternate">
+      <svg width="56" height="56" viewBox="0 0 24 24" fill="#1467E5" aria-hidden="true"><path d="M12 2L3 21h4.2l1.6-4.2h6.4L16.8 21H21L12 2zm0 6.2 2.2 5.8H9.8L12 8.2z"/></svg>
+      <span>Ahrefs</span>
+    </div>
+
+    <!-- RIGHT outer — ogledalo lijevog -->
+    <div class="tfi" style="--tf-t:8%;  --tf-l:86%; --tf-dur:4.8s; --tf-d:1.6s; --tf-dir:alternate">
+      <svg width="56" height="56" viewBox="0 0 24 24" fill="#007ACC" aria-hidden="true"><path d="M23.15 2.587L18.21.21a1.494 1.494 0 0 0-1.705.29l-9.46 8.63-4.12-3.128a.999.999 0 0 0-1.276.057L.327 7.261A1 1 0 0 0 .326 8.74L3.899 12 .326 15.26a1 1 0 0 0 .001 1.479L1.65 17.94a.999.999 0 0 0 1.276.057l4.12-3.128 9.46 8.63a1.492 1.492 0 0 0 1.704.29l4.942-2.377A1.5 1.5 0 0 0 24 20.06V3.939a1.5 1.5 0 0 0-.85-1.352zm-5.146 14.861L10.826 12l7.178-5.448v10.896z"/></svg>
+      <span>VS Code</span>
+    </div>
+    <div class="tfi" style="--tf-t:32%; --tf-l:86%; --tf-dur:6.6s; --tf-d:0.2s; --tf-dir:alternate-reverse">
+      <img src="https://cdn.simpleicons.org/figma/F24E1E" width="56" height="56" alt="Figma" loading="lazy">
+      <span>Figma</span>
+    </div>
+    <div class="tfi" style="--tf-t:57%; --tf-l:86%; --tf-dur:5.1s; --tf-d:2.3s; --tf-dir:alternate">
+      <img src="https://cdn.simpleicons.org/googleanalytics/E37400" width="56" height="56" alt="Google Analytics" loading="lazy">
+      <span>Analytics</span>
+    </div>
+    <div class="tfi" style="--tf-t:80%; --tf-l:86%; --tf-dur:6.3s; --tf-d:1.0s; --tf-dir:alternate-reverse">
+      <img src="https://cdn.simpleicons.org/googlesearchconsole/458CF5" width="56" height="56" alt="Search Console" loading="lazy">
+      <span>Search Console</span>
+    </div>
+
+  </div>
+</section>
+
+<!-- ── INCLUDES ─────────────────────────────────────────────── -->
+<section class="includes-sec" id="usluge">
+  <div class="includes-inner">
+    <div class="inc-eyebrow">Sve na jednom mjestu</div>
+    <h2>Šta uključuje naše<br><em>kompletno rješenje?</em></h2>
+    <ul class="includes-grid">
+      <li>Registraciju domene i pouzdan hosting</li>
+      <li>Moderan i profesionalan web dizajn</li>
+      <li>Responsivan prikaz na svim uređajima</li>
+      <li>SSL certifikat i naprednu sigurnost</li>
+      <li>Brzu i optimiziranu web stranicu</li>
+      <li>SEO optimizaciju za bolju Google poziciju</li>
+      <li>Jednostavno upravljanje sadržajem</li>
+      <li>Redovno održavanje i tehničku podršku</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ── STORY ─────────────────────────────────────────────── -->
+<section class="story-sec">
+  <div class="story-glow" aria-hidden="true"></div>
+
+  <div class="story-inner">
+
+    <div class="story-chunk" data-story>
+      <p class="st-small">Zamislite ovo —</p>
+      <h2 class="st-big">Vaš sajt radi<br>dok vi <em>spavate.</em></h2>
+      <p class="st-body">Bez odmora. Bez bolovanja. Bez grešaka. Prima upite u 3 ujutro, predstavlja vaše usluge nedjelju popodne, gradi povjerenje svaki dan — i ne traži plaću za to.</p>
+    </div>
+
+    <div class="story-break" aria-hidden="true"><span></span></div>
+
+    <div class="story-chunk story-chunk--mid" data-story>
+      <p class="st-pull">Korisnik sudi za<br><strong>manje od 0.05 sekundi.</strong></p>
+      <p class="st-body st-body--narrow">Ne gleda vaš sadržaj. Još ne čita šta nudite. Osjeća... je li ovo ozbiljno ili nije. Tu jednu sekundu ili osvajate ili gubite zauvijek.</p>
+    </div>
+
+    <div class="story-break" aria-hidden="true"><span></span></div>
+
+    <div class="story-chunk story-chunk--close" data-story>
+      <p class="st-small">Na kraju dana —</p>
+      <h2 class="st-big st-big--end">Mi ne pravimo<br>sajtove. <em>Pravimo rast.</em></h2>
+      <p class="st-body">Svaki projekat počinjemo od nule: vaše tržište, vaša konkurencija, vaši kupci. Tek onda dizajn. Rezultat nije lijepa stranica, to je alat koji aktivno povećava vaš prihod.</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- ── TESTIMONIALS ─────────────────────────────────────────── -->
+<section class="testi-sec">
+  <div class="testi-inner">
+    <div class="testi-eyebrow">Recenzije klijenata</div>
+    <h2 class="testi-heading">Rezultati govore<br><em>sami za sebe</em></h2>
+
+    <div class="testi-grid">
+
+      <div class="testi-card">
+        <div class="testi-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p class="testi-quote">Nakon redizajna naša online rezervacija je porasla za 60% u prvom mjesecu. Ekipa je bila profesionalna od prvog dana, isporučili su sve na vrijeme i savjeti su bili vrijedni zlata. Preporučujem svakome.</p>
+        <div class="testi-author">
+          <div class="testi-avatar">MP</div>
+          <div><div class="testi-name">Marko Petrović</div><div class="testi-biz">Restoran Stari Grad &middot; Sarajevo</div></div>
+        </div>
+      </div>
+
+      <div class="testi-card">
+        <div class="testi-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p class="testi-quote">Za manje od 10 dana imala sam profesionalan sajt za moj salon. Klijenti dolaze s Googlea - nešto što ranije nisam imala. ROI sam ostvarila u prva 3 tjedna. Fantastična saradnja!</p>
+        <div class="testi-author">
+          <div class="testi-avatar" style="background:#a78bfa">AK</div>
+          <div><div class="testi-name">Ana Kovačević</div><div class="testi-biz">Beauty Salon Ana &middot; Mostar</div></div>
+        </div>
+      </div>
+
+      <div class="testi-card">
+        <div class="testi-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p class="testi-quote">Stari sajt je bio katastrofa. MotionVibe je za 7 dana napravio nešto što smo godinama sanjali. Google nas sada nalazi na prvoj strani, upiti rastu svaki mjesec. Preporučujem svim firmama!</p>
+        <div class="testi-author">
+          <div class="testi-avatar" style="background:#60a5fa">AM</div>
+          <div><div class="testi-name">Adnan Mujić</div><div class="testi-biz">Auto Servis Mujić &middot; Zenica</div></div>
+        </div>
+      </div>
+
+      <div class="testi-card">
+        <div class="testi-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p class="testi-quote">Investirala sam u web stranicu i za dva mjeseca pokrila sve troškove kroz nove klijente s interneta. Profesionalni dizajn, brza izrada i odlična podrška i nakon završetka projekta.</p>
+        <div class="testi-author">
+          <div class="testi-avatar" style="background:#34d399">DH</div>
+          <div><div class="testi-name">Dijana Hadžić</div><div class="testi-biz">Nova Dom Nekretnine &middot; Banja Luka</div></div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="testi-gbar">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
+      <span class="testi-gbar-txt"><strong>5.0</strong> · Ocjena na Google recenzijama od 200+ klijenata</span>
+      <span class="testi-stars-sm">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+    </div>
+
+  </div>
+</section>
+
+<!-- ── SECURITY & BACKEND ─────────────────────────────────── -->
+<section class="sec-shield">
+  <div class="sec-shield-inner">
+
+    <div class="sec-shield-head">
+      <div class="sec-shield-eyebrow">Sigurnost & Backend</div>
+      <h2 class="sec-shield-heading">Vaš sajt zaštićen<br><em>od temelja</em></h2>
+      <p class="sec-shield-sub">Svaki projekat koji isporučimo dolazi s enterprise-grade sigurnosnom arhitekturom. Ne kao opcija — kao standard.</p>
+    </div>
+
+    <div class="sec-shield-grid">
+
+      <div class="sec-card">
+        <div class="sec-card-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        </div>
+        <h3 class="sec-card-title">HTTPS & SSL</h3>
+        <p class="sec-card-body">Svaki sajt isporučujemo s SSL certifikatom i HSTS headerima. HTTP→HTTPS redirect, TLS 1.3, A+ na SSL Labs testu.</p>
+      </div>
+
+      <div class="sec-card">
+        <div class="sec-card-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+        </div>
+        <h3 class="sec-card-title">Security Headers</h3>
+        <p class="sec-card-body">CSP, X-Frame-Options, HSTS, Permissions-Policy, Referrer-Policy — svi enterprise security headeri konfigurisani po mjeri.</p>
+      </div>
+
+      <div class="sec-card">
+        <div class="sec-card-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+        </div>
+        <h3 class="sec-card-title">Rate Limiting</h3>
+        <p class="sec-card-body">Višeslojno ograničavanje zahtjeva po IP-u. Štiti API endpointe od spam napada, brute force i automatiziranih skripti.</p>
+      </div>
+
+      <div class="sec-card">
+        <div class="sec-card-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+        </div>
+        <h3 class="sec-card-title">Bot Zaštita</h3>
+        <p class="sec-card-body">Honeypot polja, timing provjere, user-agent detekcija i origin validacija eliminišu automatske botove i scrapers.</p>
+      </div>
+
+      <div class="sec-card">
+        <div class="sec-card-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+        </div>
+        <h3 class="sec-card-title">Monitoring & Logovi</h3>
+        <p class="sec-card-body">Strukturirani JSON logovi za svaki API poziv, sigurnosni event i grešku. Sve sumnjivo ponašanje se bilježi i upozorava.</p>
+      </div>
+
+      <div class="sec-card">
+        <div class="sec-card-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M10 2h4"/><path d="M12 14v-4"/><circle cx="12" cy="14" r="8"/></svg>
+        </div>
+        <h3 class="sec-card-title">Input Validacija</h3>
+        <p class="sec-card-body">Stroga sanitizacija svih korisničkih unosa. SQL injection, XSS, command injection i HTML injection su blokirani na svakom ulaznom polju.</p>
+      </div>
+
+      <div class="sec-card">
+        <div class="sec-card-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+        </div>
+        <h3 class="sec-card-title">Backend Arhitektura</h3>
+        <p class="sec-card-body">Node.js / Express API sa strukturiranim rutama, env varijablama za sve tajne podatke i blokadom osjetljivih fajlova.</p>
+      </div>
+
+      <div class="sec-card">
+        <div class="sec-card-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>
+        </div>
+        <h3 class="sec-card-title">Dependency Audit</h3>
+        <p class="sec-card-body">Automatski sigurnosni audit svih paketa pri svakom deployu. Ranjivi paketi se blokiraju prije nego što stignu u produkciju.</p>
+      </div>
+
+      <div class="sec-card">
+        <div class="sec-card-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        </div>
+        <h3 class="sec-card-title">Transakcijski Email</h3>
+        <p class="sec-card-body">SMTP integracija s Gmail / SendGrid, auto-odgovor klijentima, HTML escape u emailima i zaštita od email injection napada.</p>
+      </div>
+
+    </div>
+
+    <div class="sec-shield-badge">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" width="16" height="16"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+      Svaki projekat prolazi sigurnosni pregled prije isporuke — bez dodatnih troškova
+    </div>
+
+  </div>
+</section>
+
+<!-- ── PRICING ────────────────────────────────────────────── -->
+<section class="pricing-sec" id="paketi">
+  <div class="pricing-inner">
+    <div class="pricing-eyebrow">Transparentne cijene</div>
+    <h2 class="pricing-heading">Odaberite pravi paket<br><em>za vaš biznis</em></h2>
+
+    <div class="pricing-grid">
+
+      <!-- ── OSNOVNI ── -->
+      <div class="pricing-card">
+        <p class="pc-type">Prezentacijski sajt</p>
+        <h3 class="pc-name">Osnovni paket</h3>
+        <p class="pc-ideal">Idealno za male radnje i obrte koji žele brzo online prisustvo</p>
+        <div class="pc-price">
+          <span class="pc-range">450–700</span>
+          <span class="pc-curr">KM</span>
+        </div>
+        <ul class="pc-features">
+          <li>Do 5 podstranica (Početna, O nama, Usluge, Kontakt, Galerija)</li>
+          <li>Hosting uključen</li>
+          <li>Mobilna verzija — responsive dizajn</li>
+          <li>SEO optimizacija (osnovna)</li>
+          <li>Kontakt forma i Google mapa</li>
+          <li>SSL certifikat i osnovna sigurnost</li>
+        </ul>
+        <p class="pc-tagline">Brzo rješenje da vaša firma bude online i dostupna klijentima.</p>
+        <div class="pc-rate">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><rect x="2" y="5" width="20" height="14" rx="2"/><line x1="2" y1="10" x2="22" y2="10"/></svg>
+          Plaćanje na 2–3 rate
+        </div>
+        <a href="#kontakt" class="pc-cta">Odaberi Osnovni</a>
+      </div>
+
+      <!-- ── STANDARDNI (featured) ── -->
+      <div class="pricing-card pricing-card--featured">
+        <div class="pc-pop">★ Najpopularniji izbor</div>
+        <div class="pc-discount-badge">
+          <span class="pc-discount-old">950 KM</span>
+          <span class="pc-discount-save">Uštedi 300 KM</span>
+        </div>
+        <p class="pc-type">Sajt za mali biznis</p>
+        <h3 class="pc-name">Standardni paket</h3>
+        <p class="pc-ideal">Idealno za male i srednje biznise koji žele profesionalan izgled</p>
+        <div class="pc-price">
+          <span class="pc-range">650</span>
+          <span class="pc-curr">KM</span>
+        </div>
+        <ul class="pc-features">
+          <li>Do 8–9 podstranica</li>
+          <li>Prilagođeni dizajn po vašim bojama i brendu</li>
+          <li>Galerija i slike proizvoda ili usluga</li>
+          <li>Kontakt forma, mapa, dugme za poziv/WhatsApp</li>
+          <li>Mobilna verzija — responsive dizajn</li>
+          <li>SEO optimizacija i optimizacija brzine</li>
+          <li>SSL certifikat i sigurnost</li>
+          <li>Početna podrška i uputstvo za upravljanje sajtom</li>
+        </ul>
+        <p class="pc-tagline">Profesionalan sajt koji gradi povjerenje i predstavlja vaš biznis online.</p>
+        <div class="pc-rate">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><rect x="2" y="5" width="20" height="14" rx="2"/><line x1="2" y1="10" x2="22" y2="10"/></svg>
+          Plaćanje na 3–4 rate
+        </div>
+        <a href="#kontakt" class="pc-cta">Odaberi Standardni</a>
+      </div>
+
+      <!-- ── PREMIUM ── -->
+      <div class="pricing-card">
+        <p class="pc-type">Kompletan profesionalni sajt</p>
+        <h3 class="pc-name">Premium paket</h3>
+        <p class="pc-ideal">Idealno za biznise koji žele kompletno prilagođeni sajt i dodatne opcije</p>
+        <div class="pc-price">
+          <span class="pc-range">1.200–1.700</span>
+          <span class="pc-curr">KM</span>
+        </div>
+        <ul class="pc-features">
+          <li>9–11 podstranica (ili više po dogovoru)</li>
+          <li>Unikatni dizajn po vašem brendu</li>
+          <li>Galerija, proizvodi, portfolio i blog</li>
+          <li>Kontakt forma, mapa i WhatsApp dugme</li>
+          <li>SEO optimizacija, brzina i CMS</li>
+          <li>Hosting, SSL i sigurnost</li>
+          <li>Brzi rok izrade (po dogovoru)</li>
+          <li>Podrška za izmjene i održavanje</li>
+          <li>Paket je fleksibilan i prilagodljiv vašim potrebama</li>
+        </ul>
+        <p class="pc-tagline">Najbolji izbor za ozbiljne biznise koji žele profesionalan i funkcionalan sajt.</p>
+        <div class="pc-rate">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><rect x="2" y="5" width="20" height="14" rx="2"/><line x1="2" y1="10" x2="22" y2="10"/></svg>
+          Plaćanje na 3–6 rata
+        </div>
+        <a href="#kontakt" class="pc-cta">Odaberi Premium</a>
+      </div>
+
+    </div>
+
+    <p class="pricing-note">
+      <strong>Napomena:</strong> Blog, web shop i dodatne usluge se posebno dogovaraju i naplaćuju prema vašim potrebama. Svi paketi omogućuju plaćanje na rate bez dodatnih troškova.
+    </p>
+  </div>
+</section>
+
+<!-- ── EXTRAS ──────────────────────────────────────────────── -->
+<section class="extras-sec">
+  <div class="extras-inner">
+    <h3 class="extras-heading">Sve što vaš sajt <em>može imati</em></h3>
+    <p class="extras-sub">Dodajte funkcionalnosti koje vaš biznis zaista treba — svaka se dogovara posebno.</p>
+
+    <div class="extras-grid">
+
+      <div class="extra-item" data-extra="email-marketing" role="button" tabindex="0">
+        <div class="extra-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div>
+        <div class="extra-text"><span class="extra-name">Email marketing</span><span class="extra-desc">Automatski newsletter i kampanje za vaše kupce</span></div>
+      </div>
+
+      <div class="extra-item" data-extra="whatsapp" role="button" tabindex="0">
+        <div class="extra-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></div>
+        <div class="extra-text"><span class="extra-name">WhatsApp widget</span><span class="extra-desc">Direktna komunikacija s posjetiocima u jednom kliku</span></div>
+      </div>
+
+      <div class="extra-item" data-extra="push" role="button" tabindex="0">
+        <div class="extra-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8h1a4 4 0 0 1 0 8h-1"/><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/><line x1="6" y1="1" x2="6" y2="4"/><line x1="10" y1="1" x2="10" y2="4"/><line x1="14" y1="1" x2="14" y2="4"/></svg></div>
+        <div class="extra-text"><span class="extra-name">Push obavještenja</span><span class="extra-desc">Šaljite poruke direktno u browser vaših korisnika</span></div>
+      </div>
+
+      <div class="extra-item" data-extra="booking" role="button" tabindex="0">
+        <div class="extra-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg></div>
+        <div class="extra-text"><span class="extra-name">Booking sistem</span><span class="extra-desc">Online rezervacije 24/7 s automatskim podsjetnicima</span></div>
+      </div>
+
+      <div class="extra-item" data-extra="placanje" role="button" tabindex="0">
+        <div class="extra-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="4" width="22" height="16" rx="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg></div>
+        <div class="extra-text"><span class="extra-name">Online plaćanje</span><span class="extra-desc">Stripe, PayPal i lokalne banke — naplate direktno s weba</span></div>
+      </div>
+
+      <div class="extra-item" data-extra="loyalty" role="button" tabindex="0">
+        <div class="extra-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></div>
+        <div class="extra-text"><span class="extra-name">Loyalty program</span><span class="extra-desc">Nagrađujte vjerne kupce bodovima i popustima</span></div>
+      </div>
+
+      <div class="extra-item" data-extra="pdf" role="button" tabindex="0">
+        <div class="extra-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg></div>
+        <div class="extra-text"><span class="extra-name">PDF generator</span><span class="extra-desc">Automatska izrada ponuda, faktura i dokumenata</span></div>
+      </div>
+
+      <div class="extra-item" data-extra="visejezicni" role="button" tabindex="0">
+        <div class="extra-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></div>
+        <div class="extra-text"><span class="extra-name">Višejezični sajt</span><span class="extra-desc">Sajt na bosanskom, engleskom ili bilo kom jeziku</span></div>
+      </div>
+
+      <div class="extra-item" data-extra="recenzije" role="button" tabindex="0">
+        <div class="extra-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div>
+        <div class="extra-text"><span class="extra-name">Sistem recenzija</span><span class="extra-desc">Prikaz Google recenzija i testimonijala na sajtu</span></div>
+      </div>
+
+      <div class="extra-item" data-extra="analytics" role="button" tabindex="0">
+        <div class="extra-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg></div>
+        <div class="extra-text"><span class="extra-name">Analytics dashboard</span><span class="extra-desc">Pratite posjetioce, konverzije i prihode u realnom vremenu</span></div>
+      </div>
+
+      <div class="extra-item" data-extra="webshop" role="button" tabindex="0">
+        <div class="extra-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg></div>
+        <div class="extra-text"><span class="extra-name">Web shop</span><span class="extra-desc">Prodajte online — catalog, narudžbe, uplata, isporuka</span></div>
+      </div>
+
+      <div class="extra-item" data-extra="blog" role="button" tabindex="0">
+        <div class="extra-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M7 8h.01M7 12h.01M7 16h.01M11 8h6M11 12h6M11 16h4"/></svg></div>
+        <div class="extra-text"><span class="extra-name">Blog & CMS</span><span class="extra-desc">Objavljujte vijesti i sadržaj sami, bez tehničkog znanja</span></div>
+      </div>
+
+      <div class="extra-item" data-extra="portal" role="button" tabindex="0">
+        <div class="extra-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></div>
+        <div class="extra-text"><span class="extra-name">Korisnički portal</span><span class="extra-desc">Login zona za vaše klijente — dokumenti, narudžbe, profil</span></div>
+      </div>
+
+      <div class="extra-item" data-extra="gdpr" role="button" tabindex="0">
+        <div class="extra-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+        <div class="extra-text"><span class="extra-name">GDPR & Cookie consent</span><span class="extra-desc">Potpuna usklađenost s europskim zakonima o privatnosti</span></div>
+      </div>
+
+      <div class="extra-item" data-extra="video" role="button" tabindex="0">
+        <div class="extra-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2"/></svg></div>
+        <div class="extra-text"><span class="extra-name">Video sekcije</span><span class="extra-desc">Hero video, pozadine i embedded prezentacije vašeg rada</span></div>
+      </div>
+
+      <div class="extra-item" data-extra="livechat" role="button" tabindex="0">
+        <div class="extra-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.07 4.93a10 10 0 1 1-14.14 0"/></svg></div>
+        <div class="extra-text"><span class="extra-name">Live chat podrška</span><span class="extra-desc">Odgovarajte posjetiocima uživo direktno s mobilnog</span></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ── FAQ ──────────────────────────────────────────────────── -->
+<section class="faq-sec" id="pitanja">
+  <div class="faq-inner">
+    <div class="faq-eyebrow">Često postavljena pitanja</div>
+    <h2 class="faq-heading">Imate pitanja?<br><em>Mi imamo odgovore.</em></h2>
+    <div class="faq-list">
+
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">Koliko košta izrada web stranice?<svg class="faq-arr" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="6 9 12 15 18 9"/></svg></button>
+        <div class="faq-a"><div class="faq-a-in">Cijene variraju od 450 KM za osnovni prezentacijski sajt do 1.700 KM i više za premium projekte sa svim funkcionalnostima. Svaki projekat procjenjujemo individualno — kontaktirajte nas za besplatnu konsultaciju i preciznu ponudu bez obaveza.</div></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">Koliko dugo traje izrada sajta?<svg class="faq-arr" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="6 9 12 15 18 9"/></svg></button>
+        <div class="faq-a"><div class="faq-a-in">Prvu verziju sajta isporučujemo u roku od 7 radnih dana od kad primimo sve potrebne materijale (logo, fotografije, tekstovi). Kompleksniji projekti s web shopom ili custom funkcijama mogu trajati 3–6 sedmica. Uvijek se dogovaramo unaprijed o rokovima.</div></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">Da li je hosting i domena uključena u cijenu?<svg class="faq-arr" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="6 9 12 15 18 9"/></svg></button>
+        <div class="faq-a"><div class="faq-a-in">Da! Svi naši paketi uključuju godišnji hosting na brzom serveru, .ba ili .com domenu i SSL certifikat. Brinemo o tehničkim stvarima kako bi vi mogli fokusirati na vaš biznis. Vi uvijek ostajete vlasnici vaše domene.</div></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">Mogu li sam uređivati sadržaj sajta?<svg class="faq-arr" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="6 9 12 15 18 9"/></svg></button>
+        <div class="faq-a"><div class="faq-a-in">Apsolutno! Svi naši sajtovi dolaze s jednostavnim sistemom za upravljanje sadržajem (CMS). Možete sami mijenjati tekstove, slike i cijene — bez ikakvog tehničkog znanja. Dajemo vam i kratki video vodič za upravljanje vašim sajtom.</div></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">Šta ako nisam zadovoljan rezultatom?<svg class="faq-arr" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="6 9 12 15 18 9"/></svg></button>
+        <div class="faq-a"><div class="faq-a-in">Nudimo neograničene revizije tokom procesa izrade sve dok niste 100% zadovoljni. Naš cilj je da vi budete oduševljeni rezultatom. Radimo transparentno i komuniciramo svaki korak — zato naši klijenti uvijek ostaju zadovoljni.</div></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">Da li radite za biznise van Bosne i Hercegovine?<svg class="faq-arr" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="6 9 12 15 18 9"/></svg></button>
+        <div class="faq-a"><div class="faq-a-in">Da, radimo za klijente širom regije — Srbija, Hrvatska, Slovenija — kao i za dijasporu u Evropi. Sva komunikacija i saradnja se odvijaju online, a plaćanje je moguće putem bankovnog transfera ili kartice.</div></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ── KONTAKT ────────────────────────────────────────────── -->
+<section class="kontakt-sec" id="kontakt">
+  <div class="kontakt-inner">
+
+    <div class="kontakt-left">
+      <div class="kontakt-eyebrow">Kontaktirajte nas</div>
+      <h2 class="kontakt-heading">Razgovarajmo o<br><em>vašem projektu</em></h2>
+      <p class="kontakt-sub">Odgovaramo u roku od jednog radnog dana. Konsultacija je besplatna i bez obaveza.</p>
+
+      <div class="kontakt-info">
+        <a href="https://mail.google.com/mail/?view=cm&to=motionvibe49@gmail.com&su=Upit%20sa%20MotionVibe.ba&body=Pozdrav%20MotionVibe%20tim%2C%0A%0A" target="_blank" rel="noopener" class="kinfo-item">
+          <div class="kinfo-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" width="18" height="18"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div>
+          <span>motionvibe49@gmail.com</span>
+        </a>
+        <a href="viber://chat?number=38762221577" class="kinfo-item">
+          <div class="kinfo-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" width="18" height="18"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 11.7 19.79 19.79 0 0 1 1.64 3.1 2 2 0 0 1 3.61 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.6a16 16 0 0 0 6 6l.96-.96a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21.5 16z"/></svg></div>
+          <span>Viber / WhatsApp</span>
+        </a>
+        <a href="https://www.instagram.com/motionvibedesign/" target="_blank" rel="noopener" class="kinfo-item">
+          <div class="kinfo-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" width="18" height="18"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".5" fill="currentColor" stroke="none"/></svg></div>
+          <div><span style="display:block;font-size:.7rem;color:var(--muted);margin-bottom:1px">Instagram</span><span>motionvibedesign</span></div>
+        </a>
+        <a href="https://www.instagram.com/faris_mur_08?igsh=MXcycHdhejVuMWlndQ==" target="_blank" rel="noopener" class="kinfo-item">
+          <div class="kinfo-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" width="18" height="18"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".5" fill="currentColor" stroke="none"/></svg></div>
+          <div><span style="display:block;font-size:.7rem;color:var(--muted);margin-bottom:1px">Osnivač</span><span>faris_mur_08</span></div>
+        </a>
+      </div>
+    </div>
+
+    <div class="kontakt-right">
+      <form class="kontakt-form" id="kontaktForm" novalidate>
+        <!-- Honeypot: hidden from humans, bots fill it → submission rejected -->
+        <div style="position:absolute;left:-9999px;top:-9999px;width:0;height:0;overflow:hidden;opacity:0;pointer-events:none" aria-hidden="true">
+          <label for="_hp">Website URL</label>
+          <input type="text" id="_hp" name="_hp" tabindex="-1" autocomplete="off" value="">
+        </div>
+        <!-- Timing token: JS sets this on load; server checks min 3s elapsed -->
+        <input type="hidden" name="_ts" id="_formTs" value="0">
+        <div class="kf-row">
+          <div class="kf-group">
+            <label class="kf-label" for="kfIme">Ime i prezime <span>*</span></label>
+            <input class="kf-input" id="kfIme" name="ime" type="text" placeholder="Vaše ime" required />
+          </div>
+          <div class="kf-group">
+            <label class="kf-label" for="kfEmail">Email adresa <span>*</span></label>
+            <input class="kf-input" id="kfEmail" name="email" type="email" placeholder="vas@email.com" required />
+          </div>
+        </div>
+        <div class="kf-row">
+          <div class="kf-group">
+            <label class="kf-label" for="kfTelefon">Telefon</label>
+            <input class="kf-input" id="kfTelefon" name="telefon" type="tel" placeholder="+387 6x xxx xxx" />
+          </div>
+          <div class="kf-group">
+            <label class="kf-label" for="kfUsluga">Zanima me</label>
+            <select class="kf-input kf-select" id="kfUsluga" name="usluga">
+              <option value="">Odaberite uslugu</option>
+              <option>Web stranica</option>
+              <option>Web shop</option>
+              <option>Web aplikacija</option>
+              <option>SEO optimizacija</option>
+              <option>Digitalni marketing</option>
+              <option>Redizajn postojećeg sajta</option>
+              <option>Nešto drugo</option>
+            </select>
+          </div>
+        </div>
+        <div class="kf-group">
+          <label class="kf-label" for="kfPoruka">Poruka <span>*</span></label>
+          <textarea class="kf-input kf-textarea" id="kfPoruka" name="poruka" placeholder="Opišite ukratko šta trebate..." required></textarea>
+        </div>
+        <div class="kf-footer">
+          <button type="submit" class="kf-btn btn-yellow" id="kfBtn">
+            <span class="kf-btn-txt">Pošaljite poruku &rarr;</span>
+            <span class="kf-btn-spin" hidden>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" class="spin"><path d="M21 12a9 9 0 1 1-6.219-8.56"/></svg>
+              Slanje...
+            </span>
+          </button>
+          <p class="kf-notice">Odgovaramo u roku od jednog radnog dana.</p>
+        </div>
+        <div class="kf-feedback" id="kfFeedback" hidden></div>
+      </form>
+    </div>
+
+  </div>
+</section>
+
+<!-- ── FOOTER ────────────────────────────────────────────────── -->
+<footer class="site-footer">
+  <div class="footer-top">
+    <div class="footer-inner">
+
+      <div class="footer-brand">
+        <a href="index.html" class="footer-logo">MotionVibe<span>.ba</span></a>
+        <p class="footer-tagline">Web stranice koje prodaju. Vaš digitalni uspjeh počinje ovdje — izrađujemo, optimiziramo, rastemo zajedno.</p>
+        <div class="footer-socials">
+          <a href="https://www.instagram.com/motionvibedesign/" target="_blank" rel="noopener" class="footer-soc" aria-label="Instagram"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".5" fill="currentColor" stroke="none"/></svg></a>
+          <a href="#" class="footer-soc" aria-label="Facebook"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+          <a href="https://mail.google.com/mail/?view=cm&to=motionvibe49@gmail.com&su=Upit%20sa%20MotionVibe.ba&body=Pozdrav%20MotionVibe%20tim%2C%0A%0A" target="_blank" rel="noopener" class="footer-soc" aria-label="Email"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></a>
+        </div>
+      </div>
+
+      <div class="footer-nav">
+        <div class="footer-col">
+          <div class="footer-col-head">Usluge</div>
+          <a href="pages/usluga.html?id=wordpress-stranice" class="footer-link">Web stranice</a>
+          <a href="pages/usluga.html?id=woocommerce" class="footer-link">Web shopovi</a>
+          <a href="pages/usluga.html?id=crm-sistemi" class="footer-link">Web aplikacije</a>
+          <a href="pages/usluga.html?id=seo-onpage" class="footer-link">SEO optimizacija</a>
+          <a href="pages/usluga.html?id=redizajn" class="footer-link">Redizajn sajta</a>
+        </div>
+        <div class="footer-col">
+          <div class="footer-col-head">Kompanija</div>
+          <a href="#" class="footer-link">O nama</a>
+          <a href="#" class="footer-link">Portfolio</a>
+          <a href="#pitanja" class="footer-link">FAQ</a>
+          <a href="#kontakt" class="footer-link">Kontakt</a>
+          <a href="#paketi" class="footer-link">Cijene paketa</a>
+        </div>
+        <div class="footer-col">
+          <div class="footer-col-head">Kontakt</div>
+          <a href="https://mail.google.com/mail/?view=cm&to=motionvibe49@gmail.com&su=Upit%20sa%20MotionVibe.ba&body=Pozdrav%20MotionVibe%20tim%2C%0A%0A" target="_blank" rel="noopener" class="footer-link">motionvibe49@gmail.com</a>
+          <a href="viber://chat?number=38762221577" class="footer-link">Viber / WhatsApp</a>
+          <span class="footer-link footer-link--plain">Bosna i Hercegovina</span>
+        </div>
+      </div>
+
+      <div class="footer-cta-col">
+        <div class="footer-cta-box">
+          <p class="footer-cta-label">Slobodna mjesta ovog mjeseca</p>
+          <div class="footer-slots">
+            <span class="f-slot f-slot--full"></span>
+            <span class="f-slot f-slot--full"></span>
+            <span class="f-slot f-slot--full"></span>
+            <span class="f-slot"></span>
+            <span class="f-slot"></span>
+          </div>
+          <p class="footer-cta-sub"><strong>2 mjesta</strong> još slobodna</p>
+          <a href="#kontakt" class="btn-yellow footer-cta-btn">Rezervišite vaše mjesto &rarr;</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <div class="footer-bottom-inner">
+      <p class="footer-copy">&copy; 2025 MotionVibe.ba &mdash; Sva prava zadržana. &mdash; <a href="https://www.instagram.com/faris_mur_08?igsh=MXcycHdhejVuMWlndQ==" target="_blank" rel="noopener" class="footer-owner-link">@faris_mur_08</a></p>
+      <div class="footer-badges">
+        <span class="footer-badge"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>SSL zaštita</span>
+        <span class="footer-badge"><svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor"><path d="M13 4l-4 8h3l-2 8 8-10h-4z"/></svg>99 PageSpeed</span>
+        <span class="footer-badge"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>GDPR usklađen</span>
+      </div>
+      <div class="footer-legal">
+        <a href="#" class="footer-legal-link">Politika privatnosti</a>
+        <a href="#" class="footer-legal-link">Uvjeti korištenja</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- ── EXTRAS MODAL ───────────────────────────────────────── -->
+<div class="em" id="extraModal" aria-hidden="true" role="dialog" aria-modal="true">
+  <div class="em-overlay"></div>
+  <div class="em-panel">
+    <button class="em-close" id="emClose" aria-label="Zatvori">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+    </button>
+    <div class="em-icon" id="emIcon"></div>
+    <h3 class="em-title" id="emTitle"></h3>
+    <p class="em-body" id="emBody"></p>
+    <a href="#kontakt" class="btn-yellow em-cta" id="emCta">Zatraži ponudu &rarr;</a>
+  </div>
+</div>
+
+<!-- ── STICKY CTA ─────────────────────────────────────────────── -->
+<div class="sticky-cta" id="stickyCta" aria-hidden="true">
+  <div class="sticky-left">
+    <span class="sticky-pulse"></span>
+    <span class="sticky-txt">Slobodna mjesta ovog mjeseca: <strong>2 od 5</strong></span>
+  </div>
+  <a href="#kontakt" class="btn-yellow">Zatražite besplatnu ponudu &rarr;</a>
+  <button class="sticky-close" id="stickyClose" aria-label="Zatvori">
+    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+  </button>
+</div>
+
+<!-- ── LIVE NOTIFICATION ──────────────────────────────────────── -->
+<div class="live-notif" id="liveNotif" aria-live="polite" aria-hidden="true">
+  <div class="ln-dot"></div>
+  <span class="ln-txt" id="liveNotifTxt"></span>
+</div>
+
+<script src="js/app.js" defer></script>
+</body>
+</html>
