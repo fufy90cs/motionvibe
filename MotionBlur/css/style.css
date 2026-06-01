@@ -4035,12 +4035,6 @@ body { overflow-x:hidden; max-width:100vw; }
 .sec-shield, .site-footer, .trust-bar, .reel-sec,
 .extras-sec, .process-sec { overflow-x:hidden; }
 
-/* content-visibility — skip rendering off-screen sections */
-.includes-sec, .pricing-sec, .story-sec,
-.results-sec, .testi-sec, .faq-sec, .sec-shield {
-  content-visibility:auto;
-  contain-intrinsic-size:0 600px;
-}
 
 /* ═══════════════════════════════════════════════════════════
    MOBILE PERFORMANCE — touch devices
@@ -4846,3 +4840,45 @@ section, header, footer, nav, div, article, aside {
 .page-hero { padding-top:68px !important; }
 .breadcrumb { top:78px !important; }
 #scroll-progress { top:0 !important; }
+
+/* ── Mobile nav accordion ── */
+.mob-acc { width:100%; }
+.mob-acc-btn {
+  width:100%; display:flex; align-items:center; justify-content:space-between;
+  text-align:left;
+}
+.mob-chevron { transition:transform .22s; flex-shrink:0; }
+.mob-acc-btn[aria-expanded="true"] .mob-chevron { transform:rotate(180deg); }
+
+.mob-acc-body {
+  display:none;
+  flex-direction:column;
+  padding:4px 0 4px 14px;
+  border-left:2px solid rgba(191,95,255,.25);
+  margin:2px 0 4px 13px;
+}
+.mob-acc-body.open { display:flex; }
+
+.mob-sub-link {
+  font-size:.85rem; font-weight:500; color:var(--muted);
+  padding:8px 10px; border-radius:7px;
+  transition:color .15s, background .15s;
+  text-decoration:none;
+}
+.mob-sub-link:hover,
+.mob-sub-link:active { color:var(--yellow); background:var(--yellow-light); }
+
+/* ── Kontakt — bez forme, jedna kolona ── */
+.kontakt-inner {
+  grid-template-columns: 1fr !important;
+  max-width: 560px !important;
+  margin: 0 auto !important;
+}
+.kontakt-left { text-align:center; }
+.kontakt-info {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  text-align: left;
+  margin-top: 8px;
+}

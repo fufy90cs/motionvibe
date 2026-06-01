@@ -69,6 +69,24 @@ hamburger?.addEventListener('click', () => {
   mobNav?.classList.toggle('open', open);
   document.body.style.overflow = open ? 'hidden' : '';
 });
+// Mobile accordion — Usluge / Suradnje
+mobNav?.querySelectorAll('.mob-acc-btn').forEach(btn => {
+  btn.addEventListener('click', e => {
+    e.stopPropagation();
+    const body    = btn.nextElementSibling;
+    const isOpen  = body.classList.contains('open');
+    // Close all others
+    mobNav.querySelectorAll('.mob-acc-body.open').forEach(b => {
+      b.classList.remove('open');
+      b.previousElementSibling.setAttribute('aria-expanded','false');
+    });
+    if (!isOpen) {
+      body.classList.add('open');
+      btn.setAttribute('aria-expanded','true');
+    }
+  });
+});
+
 mobNav?.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
   hamburger?.classList.remove('open');
   mobNav?.classList.remove('open');
