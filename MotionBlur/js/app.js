@@ -57,11 +57,8 @@
   });
 })();
 
-// ── NAV SCROLL SHADOW ──────────────────────────────────────
+// ── NAV ──────────────────────────────────────────────────
 const nav = document.getElementById('nav');
-window.addEventListener('scroll', () => {
-  nav?.classList.toggle('scrolled', window.scrollY > 20);
-}, { passive: true });
 
 // ── HAMBURGER / MOBILE NAV ─────────────────────────────────
 const hamburger = document.getElementById('hamburger');
@@ -294,7 +291,18 @@ const EXTRAS = {
   })();
 })();
 
-// ── TRUST COUNTER ──────────────────────────────────────────
+// ── COUNT-UP ANIMATION (shared) ────────────────────────────
+// Used by trust-bar (parses text) and result-num (uses data-target)
+function animateCount(el, target, suffix, dur) {
+  const t0 = performance.now();
+  (function tick(now) {
+    const p    = Math.min((now - t0) / dur, 1);
+    const ease = 1 - Math.pow(1 - p, 3);
+    el.textContent = Math.round(ease * target) + (suffix || '');
+    if (p < 1) requestAnimationFrame(tick);
+  })(performance.now());
+}
+
 (function () {
   const bar = document.querySelector('.trust-bar');
   if (!bar) return;
@@ -303,19 +311,8 @@ const EXTRAS = {
     if (fired || !entries[0].isIntersecting) return;
     fired = true; io.disconnect();
     bar.querySelectorAll('.trust-item strong').forEach(el => {
-      const raw = el.textContent.trim();
-      const m = raw.match(/^(\d+)/);
-      if (!m) return;
-      const target = +m[1], suffix = raw.slice(m[1].length);
-      let t0 = null;
-      const dur = 1400;
-      (function tick(ts) {
-        if (!t0) t0 = ts;
-        const p = Math.min((ts - t0) / dur, 1);
-        const ease = 1 - Math.pow(1 - p, 3);
-        el.textContent = Math.round(target * ease) + suffix;
-        if (p < 1) requestAnimationFrame(tick);
-      })(performance.now());
+      const m = el.textContent.trim().match(/^(\d+)(.*)/);
+      if (m) animateCount(el, +m[1], m[2], 1400);
     });
   }, { threshold: 0.6 });
   io.observe(bar);
@@ -476,12 +473,8 @@ document.querySelectorAll('a[href^="#"]').forEach(a => {
   const bar = document.createElement('div');
   bar.id = 'scroll-progress';
   document.body.appendChild(bar);
-
-  window.addEventListener('scroll', () => {
-    const max = document.documentElement.scrollHeight - window.innerHeight;
-    if (max <= 0) return;
-    bar.style.width = (window.scrollY / max * 100) + '%';
-  }, { passive: true });
+  // Exposed so the unified scroll handler can update it
+  window._scrollBar = bar;
 })();
 
 // ── CUSTOM CURSOR ────────────────────────────────────────
@@ -652,49 +645,29 @@ document.querySelectorAll('a[href^="#"]').forEach(a => {
   ].forEach(sel => document.querySelectorAll(sel).forEach(el => io.observe(el)));
 })();
 
-// ── HERO PARALLAX ────────────────────────────────────────
+// ── HERO PARALLAX — registered in unified scroll handler ──
 (function () {
   if (matchMedia('(pointer:coarse)').matches) return;
   const visual = document.querySelector('.hero-visual');
   const left   = document.querySelector('.hero-left');
   if (!visual || !left) return;
-
-  window.addEventListener('scroll', () => {
-    const y = window.scrollY;
-    if (y > 700) return;
-    visual.style.transform = `translateY(${y * 0.045}px)`;
-    left.style.transform   = `translateY(${y * 0.028}px)`;
-  }, { passive: true });
+  // Pre-promote layers that get transform on every scroll tick
+  visual.style.willChange = 'transform';
+  left.style.willChange   = 'transform';
+  window._heroParallax = { visual, left };
 })();
 
-// ── ANIMATED COUNT-UP ─────────────────────────────────────
+// ── ANIMATED COUNT-UP (result-num) ────────────────────────
 (function () {
   const nums = document.querySelectorAll('.result-num');
   if (!nums.length) return;
-
-  function easeOut(t) { return 1 - Math.pow(1 - t, 3); }
-
-  function animateNum(el) {
-    const target = parseInt(el.dataset.target, 10);
-    const dur = 1600;
-    const start = performance.now();
-    function tick(now) {
-      const p = Math.min((now - start) / dur, 1);
-      el.textContent = Math.round(easeOut(p) * target);
-      if (p < 1) requestAnimationFrame(tick);
-      else el.textContent = target;
-    }
-    requestAnimationFrame(tick);
-  }
-
   const io = new IntersectionObserver(entries => {
     entries.forEach(e => {
       if (!e.isIntersecting) return;
-      animateNum(e.target);
+      animateCount(e.target, parseInt(e.target.dataset.target, 10), '', 1600);
       io.unobserve(e.target);
     });
   }, { threshold: 0.5 });
-
   nums.forEach(n => io.observe(n));
 })();
 
@@ -721,24 +694,56 @@ document.querySelectorAll('a[href^="#"]').forEach(a => {
   });
 })();
 
-// ── STICKY CTA ────────────────────────────────────────────
+// ── STICKY CTA — state only, scroll handled below ────────
+const _stickyCta = document.getElementById('stickyCta');
+let   _stickyDismissed = false;
+document.getElementById('stickyClose')?.addEventListener('click', () => {
+  _stickyDismissed = true;
+  _stickyCta?.classList.remove('show');
+});
+
+// ── UNIFIED SCROLL HANDLER ────────────────────────────────
+// Single RAF-throttled listener replaces 4 separate scroll listeners.
+// Handles: nav shadow, progress bar, hero parallax, sticky CTA.
 (function () {
-  const bar   = document.getElementById('stickyCta');
-  const close = document.getElementById('stickyClose');
-  if (!bar) return;
-  let dismissed = false;
+  const progressBar = window._scrollBar;
+  const parallax    = window._heroParallax;
+  let   ticking     = false;
+
+  function tick() {
+    const y   = window.scrollY;
+    const max = document.documentElement.scrollHeight - window.innerHeight;
+
+    // Nav shadow
+    nav?.classList.toggle('scrolled', y > 20);
+
+    // Progress bar — transform:scaleX() (no layout reflow)
+    if (progressBar && max > 0) {
+      progressBar.style.transform = `scaleX(${y / max})`;
+    }
+
+    // Hero parallax — only within hero viewport
+    if (parallax && y <= 700) {
+      parallax.visual.style.transform = `translateY(${y * 0.045}px)`;
+      parallax.left.style.transform   = `translateY(${y * 0.028}px)`;
+    } else if (parallax && y > 700) {
+      parallax.visual.style.transform = '';
+      parallax.left.style.transform   = '';
+    }
+
+    // Sticky CTA
+    if (_stickyCta && !_stickyDismissed && max > 0) {
+      _stickyCta.classList.toggle('show', y / max > 0.25);
+    }
+
+    ticking = false;
+  }
 
   window.addEventListener('scroll', () => {
-    if (dismissed) return;
-    const pct = window.scrollY / (document.body.scrollHeight - window.innerHeight);
-    if (pct > 0.25) bar.classList.add('show');
-    else bar.classList.remove('show');
+    if (!ticking) { requestAnimationFrame(tick); ticking = true; }
   }, { passive: true });
 
-  close && close.addEventListener('click', () => {
-    dismissed = true;
-    bar.classList.remove('show');
-  });
+  tick(); // run once on load for initial state
 })();
 
 // ── LIVE FOMO NOTIFICATIONS ───────────────────────────────
@@ -1064,7 +1069,9 @@ document.querySelectorAll('a[href^="#"]').forEach(a => {
 // ════════════════════════════════════════════════════════════
 
 // ── CANVAS PARTICLE CONSTELLATION ────────────────────────
+// Disabled on mobile — saves GPU/CPU on low-power devices
 (function () {
+  if (matchMedia('(pointer:coarse)').matches) return;
   const canvas = document.createElement('canvas');
   canvas.id = 'particle-field';
   document.body.prepend(canvas);
@@ -1199,6 +1206,7 @@ document.querySelectorAll('a[href^="#"]').forEach(a => {
 
 // ── SHOOTING STARS ───────────────────────────────────────
 (function () {
+  if (matchMedia('(pointer:coarse)').matches) return;
   function shoot() {
     const star   = document.createElement('div');
     star.className = 'shooting-star';

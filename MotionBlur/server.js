@@ -288,7 +288,7 @@ process.on('uncaughtException', err => {
 // ── Start ─────────────────────────────────────────────────
 app.listen(PORT, () => {
   log.info('STARTUP', { msg: 'Server ready', port: PORT, https: PROD });
-  console.log(`✅ MotionVibe server radi na http://localhost:${PORT}`);
+  if (!PROD) process.stdout.write(`✅  http://localhost:${PORT}\n`);
   // Start daily DB backup scheduler (first backup fires immediately)
   adminRoute.scheduleDailyBackup();
 });

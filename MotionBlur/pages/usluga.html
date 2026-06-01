@@ -6,65 +6,55 @@
   <title>Usluga — MotionVibe</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="preload" as="style" href="../css/style.css">
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Orbitron:wght@800;900&family=Inter:wght@400;500;600;700;800&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Orbitron:wght@800;900&family=Inter:wght@400;500;600;700;800&display=swap"></noscript>
+  <style>
+    :root{--ff-display:'Orbitron',sans-serif;--ff-serif:Georgia,'Times New Roman',serif;--yellow:#BF5FFF;--yellow-dark:#9D3FE8;--yellow-light:rgba(191,95,255,.12);--bg:#08070F;--bg2:#100D1C;--text:#F0EDE6;--text2:rgba(255,255,255,.88);--muted:rgba(255,255,255,.68);--border:rgba(240,237,230,.1);--border2:rgba(240,237,230,.17)}
+    *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+    body{font-family:'Inter',system-ui,sans-serif;color:var(--text);background:var(--bg);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+    a{text-decoration:none;color:inherit}button{cursor:pointer;border:none;background:none;font-family:inherit;color:inherit}
+    #nav{position:fixed;top:0;left:0;right:0;z-index:600;background:var(--bg);border-bottom:1px solid var(--border)}
+    .nav-container{max-width:1240px;margin:0 auto;padding:0 24px;height:68px;display:flex;align-items:center;justify-content:space-between;position:relative}
+    .nav-logo{font-weight:800;font-size:1.08rem;letter-spacing:-.03em;color:var(--text);flex:1}
+    .nav-logo span{color:var(--yellow)}
+    .nav-mid{position:absolute;left:50%;transform:translateX(-50%);display:flex;align-items:center;gap:2px}
+    .nav-link{font-size:.875rem;font-weight:500;color:var(--muted);padding:7px 13px;border-radius:7px;white-space:nowrap}
+    .nav-right{display:flex;align-items:center;justify-content:flex-end;gap:10px;flex:1;padding-right:48px}
+    .btn-yellow{display:inline-flex;align-items:center;justify-content:center;padding:11px 24px;background:linear-gradient(135deg,#A855F7 0%,#EC4899 100%);color:#fff;font-size:.875rem;font-weight:700;border-radius:50px;white-space:nowrap}
+    .page-hero{padding-top:106px;background:var(--bg);min-height:100vh;position:relative;overflow:hidden}
+  </style>
+  <link rel="stylesheet" href="../css/style.css" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="../css/style.css"></noscript>
 </head>
 <body data-type="service">
-
-<!-- ── TOP TICKER ────────────────────────────────────────────── -->
-<div class="top-ticker" aria-hidden="true">
-  <div class="tk-live"><span class="tk-live-dot"></span>DOSTUPNI</div>
-  <div class="ticker-track" id="tickerTrack">
-    <span class="tk-item">WEB DIZAJN<span class="tk-sep">—</span>E-COMMERCE<span class="tk-sep">—</span>SEO OPTIMIZACIJA<span class="tk-sep">—</span>MOTIONVIBE.BA<span class="tk-sep">—</span>LANDING STRANICE<span class="tk-sep">—</span>BOSNA I HERCEGOVINA<span class="tk-sep">—</span>BRANDING<span class="tk-sep">—</span>WEB APLIKACIJE<span class="tk-sep">—</span>DIGITALNI MARKETING<span class="tk-sep">—</span></span>
-    <span class="tk-item">WEB DIZAJN<span class="tk-sep">—</span>E-COMMERCE<span class="tk-sep">—</span>SEO OPTIMIZACIJA<span class="tk-sep">—</span>MOTIONVIBE.BA<span class="tk-sep">—</span>LANDING STRANICE<span class="tk-sep">—</span>BOSNA I HERCEGOVINA<span class="tk-sep">—</span>BRANDING<span class="tk-sep">—</span>WEB APLIKACIJE<span class="tk-sep">—</span>DIGITALNI MARKETING<span class="tk-sep">—</span></span>
-  </div>
-</div>
 
 <!-- ── NAV ──────────────────────────────────────────────────── -->
 <nav id="nav">
   <div class="nav-container">
-
     <a href="../index.html" class="nav-logo">MotionVibe<span>.ba</span></a>
-
     <div class="nav-mid">
       <a href="../index.html" class="nav-link">Početna</a>
-
       <div class="nav-item" id="dropUsluge">
-        <button class="nav-link nav-drop-btn" aria-expanded="false">
-          Usluge
-          <svg class="chevron" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="6 9 12 15 18 9"/></svg>
-        </button>
-        <div class="mega-menu">
-          <div class="mega-inner">
-            <div class="mega-col">
-              <div class="mega-col-head">
-                <svg class="mega-ico" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="3" width="16" height="12" rx="2"/><path d="M6 19h8M10 15v4"/></svg>
-                Izrada Web Stranica
-              </div>
-              <a href="usluga.html?id=wordpress-stranice"  class="mega-link"><span>WordPress Stranice</span><small>Brza izrada u WordPress-u</small></a>
-              <a href="usluga.html?id=custom-web-stranice" class="mega-link"><span>Custom Web Stranice</span><small>Next.js i custom development</small></a>
-              <a href="usluga.html?id=landing-stranice"    class="mega-link"><span>Landing Stranice</span><small>Visoko-konvertujuće stranice</small></a>
-              <a href="usluga.html?id=redizajn"            class="mega-link"><span>Redizajn Stranice</span><small>Modernizacija postojećih</small></a>
-              <a href="usluga.html?id=visejezicne"         class="mega-link"><span>Višejezične Stranice</span><small>Stranice na više jezika</small></a>
-            </div>
-            <div class="mega-col">
-              <div class="mega-col-head">
-                <svg class="mega-ico" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2 3h16v3H2zM2 9h6v8H2zM11 9h7v4h-7zM11 16h7"/></svg>
-                Izrada Web Shopova
-              </div>
-              <a href="usluga.html?id=woocommerce"       class="mega-link"><span>WooCommerce Shop</span><small>WordPress e-commerce</small></a>
-              <a href="usluga.html?id=custom-ecommerce"  class="mega-link"><span>Custom E-commerce</span><small>Headless commerce rješenja</small></a>
-            </div>
-            <div class="mega-col">
-              <div class="mega-col-head">
-                <svg class="mega-ico" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="14" height="14" rx="2"/><path d="M7 8h6M7 11h4"/></svg>
-                Web Aplikacije
-              </div>
-              <a href="usluga.html?id=crm-sistemi"        class="mega-link"><span>CRM Sistemi</span><small>Custom CRM rješenja</small></a>
-              <a href="usluga.html?id=booking-sistemi"    class="mega-link"><span>Booking Sistemi</span><small>Online rezervacijski sistemi</small></a>
-              <a href="usluga.html?id=interni-portali"    class="mega-link"><span>Interni Portali</span><small>Intranet i portali</small></a>
-              <a href="usluga.html?id=wordpress-plugini"  class="mega-link"><span>WordPress Plugini</span><small>Custom plugin development</small></a>
-            </div>
+        <button class="nav-link nav-drop-btn" aria-expanded="false">Usluge<svg class="chevron" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="6 9 12 15 18 9"/></svg></button>
+        <div class="mega-menu"><div class="mega-inner">
+          <div class="mega-col"><div class="mega-col-head"><svg class="mega-ico" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="3" width="16" height="12" rx="2"/><path d="M6 19h8M10 15v4"/></svg>Izrada Web Stranica</div>
+            <a href="usluga.html?id=wordpress-stranice" class="mega-link"><span>WordPress Stranice</span><small>Brza izrada u WordPress-u</small></a>
+            <a href="usluga.html?id=custom-web-stranice" class="mega-link"><span>Custom Web Stranice</span><small>Next.js i custom development</small></a>
+            <a href="usluga.html?id=landing-stranice" class="mega-link"><span>Landing Stranice</span><small>Visoko-konvertujuće stranice</small></a>
+            <a href="usluga.html?id=redizajn" class="mega-link"><span>Redizajn Stranice</span><small>Modernizacija postojećih</small></a>
+            <a href="usluga.html?id=visejezicne" class="mega-link"><span>Višejezične Stranice</span><small>Stranice na više jezika</small></a>
+          </div>
+          <div class="mega-col"><div class="mega-col-head"><svg class="mega-ico" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2 3h16v3H2zM2 9h6v8H2zM11 9h7v4h-7zM11 16h7"/></svg>Izrada Web Shopova</div>
+            <a href="usluga.html?id=woocommerce" class="mega-link"><span>WooCommerce Shop</span><small>WordPress e-commerce</small></a>
+            <a href="usluga.html?id=custom-ecommerce" class="mega-link"><span>Custom E-commerce</span><small>Headless commerce rješenja</small></a>
+          </div>
+          <div class="mega-col"><div class="mega-col-head"><svg class="mega-ico" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="14" height="14" rx="2"/><path d="M7 8h6M7 11h4"/></svg>Web Aplikacije</div>
+            <a href="usluga.html?id=crm-sistemi" class="mega-link"><span>CRM Sistemi</span><small>Custom CRM rješenja</small></a>
+            <a href="usluga.html?id=booking-sistemi" class="mega-link"><span>Booking Sistemi</span><small>Online rezervacijski sistemi</small></a>
+            <a href="usluga.html?id=interni-portali" class="mega-link"><span>Interni Portali</span><small>Intranet i portali</small></a>
+            <a href="usluga.html?id=wordpress-plugini" class="mega-link"><span>WordPress Plugini</span><small>Custom plugin development</small></a>
+          </div>
             <div class="mega-col">
               <div class="mega-col-head">
                 <svg class="mega-ico" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="8" cy="8" r="5"/><path d="M14 14l4 4"/></svg>
@@ -174,7 +164,6 @@
     </div>
 
     <div class="nav-right">
-      <a href="../index.html#kontakt" class="btn-yellow">Kontaktirajte nas</a>
       <button class="hamburger" id="hamburger" aria-label="Otvori meni">
         <span></span><span></span><span></span>
       </button>
@@ -189,7 +178,6 @@
   <a href="#"             class="mob-link">Suradnje</a>
   <a href="../index.html#pitanja" class="mob-link">FAQ</a>
   <a href="../index.html#kontakt" class="mob-link">Kontakt</a>
-  <a href="../index.html#kontakt" class="btn-yellow mob-cta">Kontaktirajte nas</a>
 </div>
 
 <!-- ── PAGE HERO ─────────────────────────────────────────────── -->
